@@ -1,0 +1,20 @@
+.product-btn{
+  font-size: smaller;
+}
+
+.price{
+  font-size: 1.46667em;
+  color: #e43821;
+  font-family: "DaxlinePro", "Ubuntu", "Lucida", "Trebuchet MS", sans-serif;
+}
+
+.del-em{
+  font-style: normal;
+  color: #e43821;
+  text-decoration: none;
+  line-height: 1.5;
+  text-transform: lowercase;
+  white-space: nowrap;
+  margin-top: 0;
+  font-size: 0.93333em;
+}
