@@ -28,7 +28,6 @@ public class UserServiceImpl implements UserService {
     @Override
     public void createUser(SignupRequest signUpRequest) {
         roleService.seedRole();
-        int a = 0;
         Set<Role> roles = new HashSet<>();
         User user = new User(signUpRequest.getUsername(),
                 signUpRequest.getEmail(),
