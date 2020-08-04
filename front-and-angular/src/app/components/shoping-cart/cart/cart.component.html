@@ -1,8 +1,12 @@
-<ul class="list-group">
-  <li class="list-group-item" *ngFor="let i of [1, 2, 3, 4, 5, 6]">
-    <app-cart-item></app-cart-item>
+<div *ngIf="cartItem.length === 0" class="alert alert-info ">Nema ni6to</div>
+
+<ul class="list-group" >
+  <li *ngIf="cartItem.length > 0" class="list-group-item">
+    <div *ngFor="let cart of cartItem | slice:0:5">
+      <app-cart-item [cartItemModel] = cart></app-cart-item>
+    </div>
   </li>
   <li class="list-group-item active">
-    <strong>Total:</strong> {{1000}} лв.
+    <strong>Total: </strong>{{totalSum}} лв.
   </li>
 </ul>

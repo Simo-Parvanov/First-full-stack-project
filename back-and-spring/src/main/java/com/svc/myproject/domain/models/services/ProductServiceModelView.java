@@ -4,9 +4,9 @@ import com.svc.myproject.domain.entities.Category;
 import com.svc.myproject.domain.entities.Image;
 
 import java.util.List;
-import java.util.Set;
 
 public class ProductServiceModelView {
+    private String id;
     private String name;
     private String model;
     private String description;
@@ -99,5 +99,13 @@ public class ProductServiceModelView {
 
     public void setModel(String model) {
         this.model = model;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
     }
 }

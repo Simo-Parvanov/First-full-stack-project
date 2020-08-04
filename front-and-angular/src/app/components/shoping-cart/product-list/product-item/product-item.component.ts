@@ -1,5 +1,6 @@
 import {Component, Input, OnInit} from '@angular/core';
 import {ProductModel} from 'src/app/components/models/product-model';
+import { MessengerService } from 'src/app/services/messenger.service';
 
 @Component({
   selector: 'app-product-item',
@@ -9,12 +10,16 @@ import {ProductModel} from 'src/app/components/models/product-model';
 export class ProductItemComponent implements OnInit {
   @Input() productItem: ProductModel[];
 
-  constructor() { }
+  constructor(private msg: MessengerService) { }
 
   ngOnInit(): void {
   }
 
-  getKeys(obj) {
-    return Object.values(obj);
+  handleAddToCart(){
+    this.msg.sendMsg(this.productItem)
   }
+
+  // getKeys(obj) {
+  //   return Object.values(obj);
+  // }
 }

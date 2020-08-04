@@ -1,6 +1,7 @@
 export class ProductCart {
+  id: string;
   name: string;
-  sku: string;
+  quantity: number;
   price: number;
   priceOld: number;
   discount: number;

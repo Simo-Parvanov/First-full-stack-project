@@ -46,7 +46,8 @@ import { PageNotFoundComponent } from './components/shared/page-not-found/page-n
     ProfileComponent,
     UploadImageComponent,
     ListImageComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+
   ],
     imports: [
       AppRoutingModule,
