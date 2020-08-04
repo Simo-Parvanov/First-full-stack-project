@@ -7,7 +7,7 @@
        [src]="image.imageUrl" />
   </div>
   <div class="card-body">
-    <p class="card-text">This is a wider card with supporting .</p>
+    <p class="card-text">{{productItem.description | slice: 0:50}}...</p>
 
     <del *ngIf="productItem.promotion">
       <p class="price text-center">{{productItem.priceOld.toFixed(2)}} лв.</p>

@@ -11,6 +11,7 @@ import {map, tap} from 'rxjs/operators';
 export class ProductService {
 
   imageUrl = 'http://localhost:8080/product/';
+  cartUrl = 'http://localhost:8080/cart/';
 
   constructor(private httpClient: HttpClient) { }
 

@@ -1,6 +1,7 @@
 import {Component, Input, OnInit} from '@angular/core';
 import {ProductModel} from 'src/app/components/models/product-model';
 import { MessengerService } from 'src/app/services/messenger.service';
+import {CartService} from 'src/app/services/cart.service';
 
 @Component({
   selector: 'app-product-item',
@@ -8,15 +9,17 @@ import { MessengerService } from 'src/app/services/messenger.service';
   styleUrls: ['./product-item.component.css']
 })
 export class ProductItemComponent implements OnInit {
-  @Input() productItem: ProductModel[];
+  @Input() productItem: ProductModel;
 
-  constructor(private msg: MessengerService) { }
+  constructor(private msg: MessengerService, private cartService: CartService) { }
 
   ngOnInit(): void {
   }
 
   handleAddToCart(){
-    this.msg.sendMsg(this.productItem)
+    this.cartService.addProductToCart(this.productItem).subscribe(()=>{
+      this.msg.sendMsg(this.productItem)
+    })
   }
 
   // getKeys(obj) {
