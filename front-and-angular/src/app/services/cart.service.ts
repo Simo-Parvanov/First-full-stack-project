@@ -17,8 +17,7 @@ export class CartService {
   getCartItem(): Observable<CartItem[]>{
     return this.http.get<CartItem[]>(cartURL).pipe(
       map((result: any[]) => {
-        const cartItems: [] = [];
-
+        const cartItems: CartItem[] = [];
         for (const item of result) {
           let productExists = false;
 
@@ -38,6 +37,8 @@ export class CartService {
     )
   }
   addProductToCart(product: ProductModel): Observable<any>{
-    return this.http.post(cartURL, {product});
+    return this.http.post(cartURL, {
+      name: product.name
+    });
   }
 }

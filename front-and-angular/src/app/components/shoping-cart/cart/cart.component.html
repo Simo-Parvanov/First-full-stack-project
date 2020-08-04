@@ -7,6 +7,14 @@
     </div>
   </li>
   <li class="list-group-item active">
-    <strong>Total: </strong>{{totalSum}} лв.
+    <div>Cart: {{cartItem.length}}</div>
+    <strong>Total price: </strong>
+    <div>{{totalSum}} лв.</div>
   </li>
+  <button
+    type="button"
+    class="btn btn-sm btn-primary product-btn"
+    style="background-color: #9a0200"
+    [routerLink]="['/login']">
+    Checkout</button>
 </ul>

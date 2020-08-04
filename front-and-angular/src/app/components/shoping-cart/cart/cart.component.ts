@@ -2,7 +2,7 @@ import {Component, OnInit} from '@angular/core';
 import {MessengerService} from 'src/app/services/messenger.service';
 import {ProductModel} from 'src/app/components/models/product-model';
 import {CartService} from 'src/app/services/cart.service';
-import {CartItem} from 'src/app/components/models/cart-item';
+import {CartItem} from "../../models/cart-item";
 
 @Component({
   selector: 'app-cart',
@@ -23,41 +23,55 @@ export class CartComponent implements OnInit {
 
   handleSubscription() {
     this.msg.getMsg().subscribe((product: ProductModel) => {
+      // window.sessionStorage.setItem('cartItem', null);
+       const ppp = window.sessionStorage.getItem('cartItem');
+      const m = JSON.parse(ppp);
+      // console.log(ppp);
+      console.log(m);
+
+        if (window.sessionStorage.getItem('cartItem') != null){
+          this.cartItem = JSON.parse(ppp);
+        }
+
+        let productExists = false;
+
+        for (const i in this.cartItem) {
+          if (this.cartItem[i].productId === product.id) {
+            this.cartItem[i].quantity++;
+            productExists = true;
+          }
+        }
+
+        if (!productExists) {
+          this.cartItem.push({
+            productId: product.id,
+            name: product.name,
+            quantity: 1,
+            price: product.price,
+            priceOld: product.priceOld,
+            discount: product.discount,
+            image: product.image
+          });
+        }
+        window.sessionStorage.setItem('cartItem', JSON.stringify(this.cartItem))
       this.loadCartItems()
     })
   }
 
   loadCartItems() {
-    this.cartService.getCartItem().subscribe((items: CartItem[]) => {
-      console.log(items);
-    })
-  }
-
-  addProductToCart(product: ProductModel) {
-    let productExists = false;
-
-    for (const i in this.cartItem) {
-      if (this.cartItem[i].id === product.id) {
-        this.cartItem[i].quantity++;
-        productExists = true;
-      }
+    // this.cartService.getCartItem().subscribe((items: CartItem[]) => {
+    //   this.cartItem = items;
+    //   this.calcCartTotal();
+    // })
+    if (window.sessionStorage.getItem('cartItem') != null){
+      const ppp = window.sessionStorage.getItem('cartItem');
+      this.cartItem = JSON.parse(ppp);
     }
-
-    if (!productExists) {
-      this.cartItem.push({
-        id: product.id,
-        productName: product.name,
-        quantity: 1,
-        price: product.price,
-        url: product.image
-      });
-    }
-
     this.calcCartTotal();
   }
-
   calcCartTotal() {
     this.totalSum = 0;
+    console.log(this.cartItem)
     this.cartItem.forEach(item => {
       this.totalSum += (item.quantity * item.price)
     })
