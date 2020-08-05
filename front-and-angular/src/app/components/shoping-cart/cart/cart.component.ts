@@ -2,7 +2,7 @@ import {Component, OnInit} from '@angular/core';
 import {MessengerService} from 'src/app/services/messenger.service';
 import {ProductModel} from 'src/app/components/models/product-model';
 import {CartService} from 'src/app/services/cart.service';
-import {CartItem} from "../../models/cart-item";
+
 
 @Component({
   selector: 'app-cart',
@@ -67,7 +67,6 @@ export class CartComponent implements OnInit {
   }
   calcCartTotal() {
     this.totalSum = 0;
-    console.log(this.cartItem)
     this.cartItem.forEach(item => {
       this.totalSum += (item.quantity * item.price)
     })

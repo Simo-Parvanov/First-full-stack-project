@@ -10,6 +10,10 @@ export class FiltersComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    console.log(this.onselect())
   }
 
+  onselect(){
+
+  }
 }

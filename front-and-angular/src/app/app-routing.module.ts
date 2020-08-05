@@ -9,6 +9,7 @@ import {ProfileComponent} from './components/profile/profile.component';
 import {CartDetailsComponent} from 'src/app/components/shoping-cart/cart/cart-details/cart-details.component';
 
 
+
 const routes: Routes = [
   {path: '', redirectTo: '/shop', pathMatch: 'full'},
   {path: 'login', component: LoginComponent},

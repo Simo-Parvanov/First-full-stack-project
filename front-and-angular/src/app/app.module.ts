@@ -30,6 +30,7 @@ import { PageNotFoundComponent } from './components/shared/page-not-found/page-n
 import { CartDetailsComponent } from './components/shoping-cart/cart/cart-details/cart-details.component';
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -49,6 +50,7 @@ import { CartDetailsComponent } from './components/shoping-cart/cart/cart-detail
     ListImageComponent,
     PageNotFoundComponent,
     CartDetailsComponent,
+
 
   ],
     imports: [
