@@ -27,6 +27,7 @@ import { FileUploadModule } from 'ng2-file-upload';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgxSpinnerModule } from 'ngx-spinner';
 import { PageNotFoundComponent } from './components/shared/page-not-found/page-not-found.component';
+import { CartDetailsComponent } from './components/shoping-cart/cart/cart-details/cart-details.component';
 
 
 @NgModule({
@@ -47,6 +48,7 @@ import { PageNotFoundComponent } from './components/shared/page-not-found/page-n
     UploadImageComponent,
     ListImageComponent,
     PageNotFoundComponent,
+    CartDetailsComponent,
 
   ],
     imports: [

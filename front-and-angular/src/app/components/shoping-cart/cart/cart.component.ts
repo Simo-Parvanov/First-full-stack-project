@@ -23,14 +23,10 @@ export class CartComponent implements OnInit {
 
   handleSubscription() {
     this.msg.getMsg().subscribe((product: ProductModel) => {
-      // window.sessionStorage.setItem('cartItem', null);
-       const ppp = window.sessionStorage.getItem('cartItem');
-      const m = JSON.parse(ppp);
-      // console.log(ppp);
-      console.log(m);
 
-        if (window.sessionStorage.getItem('cartItem') != null){
-          this.cartItem = JSON.parse(ppp);
+      const cartList = window.sessionStorage.getItem('cartItem');
+        if (cartList != null){
+          this.cartItem = JSON.parse(cartList);
         }
 
         let productExists = false;

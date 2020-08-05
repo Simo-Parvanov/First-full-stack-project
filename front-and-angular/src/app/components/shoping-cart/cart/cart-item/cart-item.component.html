@@ -1,11 +1,10 @@
 <div class="cart-item">
   <div *ngFor="let image of cartItemModel.image | slice:0:1">
-    <img class="bd-placeholder-img card-img-top" width="30px" height="70px"
-         [src]="image.imageUrl" />
+    <img [src]="image.imageUrl" alt="" width="70" class="img-fluid rounded shadow-sm">
   </div>
-  <span>{{cartItemModel.name}}</span> x
-  <span>{{cartItemModel.quantity}}</span>:
+  <span>{{cartItemModel.name}}</span>:
   <div>
+    <span>{{cartItemModel.quantity}}</span> x
     <strong>{{cartItemModel.quantity * cartItemModel.price}} лв.</strong>
   </div>
   <hr>

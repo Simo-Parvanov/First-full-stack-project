@@ -2,10 +2,11 @@
   <div *ngIf="productItem.promotion">
     <em class="del-em">(-{{productItem.discount}}%)</em>
   </div>
+  <div style="width: 12rem; height: 10rem">
   <div *ngFor="let image of productItem.image | slice:0:1">
-  <img class="bd-placeholder-img card-img-top" width="100%"
-       [src]="image.imageUrl" />
+    <img [src]="image.imageUrl" alt="" width="130" class="img-fluid rounded shadow-sm">
   </div>
+</div>
   <div class="card-body">
     <p class="card-text">{{productItem.description | slice: 0:50}}...</p>
 
