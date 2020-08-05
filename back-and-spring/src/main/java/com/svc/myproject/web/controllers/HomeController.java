@@ -1,7 +1,10 @@
 package com.svc.myproject.web.controllers;
 
 import com.svc.myproject.domain.entities.User;
+import com.svc.myproject.domain.models.services.UserServiceModel;
 import com.svc.myproject.repository.UserRepository;
+import com.svc.myproject.services.UserService;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
@@ -13,9 +16,11 @@ import java.util.List;
 @RequestMapping("/mod")
 public class HomeController {
     private final UserRepository userRepository;
+    private final UserService userService;
 
-    public HomeController(UserRepository userRepository) {
+    public HomeController(UserRepository userRepository, UserService userService) {
         this.userRepository = userRepository;
+        this.userService = userService;
     }
 
     @GetMapping
@@ -31,5 +36,18 @@ public class HomeController {
         userRepository.deleteById(userRepository.findByUsername(username).get().getId());
         List<User> u = userRepository.findAll();
         return ResponseEntity.ok(u);
+    }
+    
+    @PutMapping("/{username}/{method}/{role}")
+    @PreAuthorize("hasRole('ROLE_ADMIN')")
+    public ResponseEntity<List<UserServiceModel>> sendOrDeleteRole(@PathVariable String username,
+                                                                   @PathVariable String method,
+                                                                   @PathVariable String role){
+        List<UserServiceModel> userServiceModels = userService.roleUpdate(username,method,role);
+        if (userServiceModels == null){
+            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+        }
+
+        return new ResponseEntity<>(userServiceModels, HttpStatus.OK);
     }
 }

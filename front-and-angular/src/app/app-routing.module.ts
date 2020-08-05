@@ -7,6 +7,7 @@ import {ShoppingCartComponent} from './components/shoping-cart/shopping-cart.com
 import {PageNotFoundComponent} from './components/shared/page-not-found/page-not-found.component';
 import {ProfileComponent} from './components/profile/profile.component';
 import {CartDetailsComponent} from 'src/app/components/shoping-cart/cart/cart-details/cart-details.component';
+import {AdministrationComponent} from 'src/app/components/administration/administration.component';
 
 
 
@@ -17,7 +18,8 @@ const routes: Routes = [
   {path: 'register', component: RegisterComponent},
   {path: 'shop', component: ShoppingCartComponent},
   {path: 'profile', component: ProfileComponent},
-  {path: '**', component: PageNotFoundComponent},
+  {path: 'administrator', component: AdministrationComponent},
+  {path: '**', component: PageNotFoundComponent}
 ];
 
 @NgModule({
