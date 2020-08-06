@@ -11,7 +11,6 @@ public class CartController {
 
     @GetMapping()
     public ResponseEntity<?> allCart(){
-        System.out.println();
     return ResponseEntity.ok().build();
     }
 

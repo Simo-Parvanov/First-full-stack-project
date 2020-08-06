@@ -15,4 +15,8 @@ public interface ProductService {
     Product findProductById(String id);
 
     ProductServiceModelView update(ProductServiceUpdateModel updateProduct, String id);
+
+    ProductServiceModelView productById(String id);
+
+
 }

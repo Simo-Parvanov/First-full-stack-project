@@ -40,6 +40,10 @@ public class ProductController {
         return ResponseEntity.created(builder.path("/product/create")
                 .buildAndExpand().toUri()).build();
     }
+    @GetMapping("/detail/{id}")
+    public ResponseEntity<ProductServiceModelView> getProductByID(@PathVariable String id){
+        return ResponseEntity.ok(productService.productById(id));
+    }
 
     @DeleteMapping("/delete/{id}")
     @PreAuthorize("hasRole('ROLE_ADMIN') or hasRole('ROLE_MODERATOR')")

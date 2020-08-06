@@ -29,6 +29,7 @@ import { NgxSpinnerModule } from 'ngx-spinner';
 import { PageNotFoundComponent } from './components/shared/page-not-found/page-not-found.component';
 import { CartDetailsComponent } from './components/shoping-cart/cart/cart-details/cart-details.component';
 import { AdministrationComponent } from './components/administration/administration.component';
+import { ProductDetailComponent } from './components/product-detail/product-detail.component';
 
 
 
@@ -52,6 +53,7 @@ import { AdministrationComponent } from './components/administration/administrat
     PageNotFoundComponent,
     CartDetailsComponent,
     AdministrationComponent,
+    ProductDetailComponent,
 
 
   ],

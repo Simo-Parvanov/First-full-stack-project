@@ -18,4 +18,9 @@ export class ProductService {
   public list(): Observable<ProductModel[]> {
     return this.httpClient.get<ProductModel[]>(this.imageUrl + 'all').pipe(tap(console.log));
   }
+
+  public getProductDetails(id){
+    return this.httpClient.get(this.imageUrl + 'detail/' + id)
+  }
 }
+

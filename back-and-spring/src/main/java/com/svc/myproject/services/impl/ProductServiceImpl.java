@@ -71,6 +71,14 @@ public class ProductServiceImpl implements ProductService {
         return productServiceModelView;
     }
 
+    @Override
+    public ProductServiceModelView productById(String id) {
+        Optional<Product> product = productRepository.findById(id);
+        ProductServiceModelView productServiceModelView = mapper.map(product.get(), ProductServiceModelView.class);
+        productServiceModelView.setImage(imageService.findAllByModel(product.get().getModel()));
+        return productServiceModelView;
+    }
+
     private int getDiscount(Double currentPrice, Double updatePrice) {
         double result = 100 - ((updatePrice / currentPrice) * 100);
         return (int) Math.round(result);

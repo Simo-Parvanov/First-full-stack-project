@@ -1,7 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {MessengerService} from 'src/app/services/messenger.service';
 import {ProductModel} from 'src/app/components/models/product-model';
-import {CartService} from 'src/app/services/cart.service';
+
 
 
 @Component({
@@ -13,7 +13,7 @@ export class CartComponent implements OnInit {
   cartItem = [];
   totalSum = 0;
 
-  constructor(private msg: MessengerService, private cartService: CartService) {
+  constructor(private msg: MessengerService) {
   }
 
   ngOnInit() {
@@ -55,10 +55,6 @@ export class CartComponent implements OnInit {
   }
 
   loadCartItems() {
-    // this.cartService.getCartItem().subscribe((items: CartItem[]) => {
-    //   this.cartItem = items;
-    //   this.calcCartTotal();
-    // })
     if (window.sessionStorage.getItem('cartItem') != null){
       const ppp = window.sessionStorage.getItem('cartItem');
       this.cartItem = JSON.parse(ppp);
