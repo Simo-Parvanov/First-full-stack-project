@@ -40,10 +40,10 @@ public class UserServiceImpl implements UserService {
                 signUpRequest.getEmail(),
                 passwordEncoder.encode(signUpRequest.getPassword()));
 
-        if (userRepository.count() == 0){
+        if (userRepository.count() == 0) {
             roles.add(roleService.findByRoleName(ERole.ROLE_ADMIN));
             roles.add(roleService.findByRoleName(ERole.ROLE_MODERATOR));
-        }else {
+        } else {
             roles.add(roleService.findByRoleName(ERole.ROLE_USER));
         }
 
@@ -63,16 +63,29 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public List<UserServiceModel> roleUpdate(String username, String method, String roleName) {
-       Optional<User> user =  userRepository.findByUsername(username);
-       if (user.isEmpty()) {
-           return null;
-       }
-       if (method.equals("update")){
-         Set<Role> rr =  user.get().getRoles();
-         rr.add(roleService.findByRoleName(ERole.valueOf(roleName)));
-         user.get().setRoles(rr);
-       }
+        Optional<User> user = userRepository.findByUsername(username);
+        if (user.isEmpty()) {
+            return null;
+        }
+        if (method.equals("update")) {
+            Set<Role> roles = user.get().getRoles();
+            roles.add(roleService.findByRoleName(ERole.valueOf(roleName)));
+            user.get().setRoles(roles);
+        }
+        if (method.equals("delete")) {
+            Set<Role> roles = user.get().getRoles();
+            roles.remove(roleService.findByRoleName(ERole.valueOf(roleName)));
+            user.get().setRoles(roles);
+        }
         userRepository.saveAndFlush(user.get());
-        return userRepository.findAll().stream().map(user1 -> mapper.map(user1, UserServiceModel.class)).collect(Collectors.toList());
+        return userRepository.findAll().stream().map(user1 ->
+                mapper.map(user1, UserServiceModel.class)).collect(Collectors.toList());
+    }
+
+    @Override
+    public List<UserServiceModel> allUsers() {
+        return userRepository.findAll().stream().map(user -> {
+           return mapper.map(user, UserServiceModel.class);
+        }).collect(Collectors.toList());
     }
 }

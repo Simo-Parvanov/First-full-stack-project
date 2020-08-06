@@ -13,4 +13,6 @@ public interface UserService {
    boolean findUserByEmail(String email);
    
    List<UserServiceModel> roleUpdate(String username, String method, String roleName);
+
+   List<UserServiceModel> allUsers();
 }

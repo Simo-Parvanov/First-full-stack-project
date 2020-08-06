@@ -14,20 +14,19 @@ import java.util.List;
 @CrossOrigin(origins = "*", maxAge = 3600)
 @RestController
 @RequestMapping("/mod")
-public class HomeController {
+public class AdminController {
     private final UserRepository userRepository;
     private final UserService userService;
 
-    public HomeController(UserRepository userRepository, UserService userService) {
+    public AdminController(UserRepository userRepository, UserService userService) {
         this.userRepository = userRepository;
         this.userService = userService;
     }
 
     @GetMapping
     @PreAuthorize ("hasRole('ROLE_MODERATOR')")
-    public ResponseEntity<List<User>> allUsers(){
-       List<User> u = userRepository.findAll();
-        System.out.println();
+    public ResponseEntity<List<UserServiceModel>> allUsers(){
+       List<UserServiceModel> u = userService.allUsers();
         return ResponseEntity.ok(u);
     }
     @DeleteMapping("/{username}")
@@ -38,7 +37,7 @@ public class HomeController {
         return ResponseEntity.ok(u);
     }
     
-    @PutMapping("/{username}/{method}/{role}")
+    @PostMapping("/{username}/{method}/{role}")
     @PreAuthorize("hasRole('ROLE_ADMIN')")
     public ResponseEntity<List<UserServiceModel>> sendOrDeleteRole(@PathVariable String username,
                                                                    @PathVariable String method,

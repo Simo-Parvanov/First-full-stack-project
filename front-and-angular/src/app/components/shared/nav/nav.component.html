@@ -4,13 +4,20 @@
     </app-header>
   </h5>
   <nav class="my-2 my-md-0 mr-md-3">
-    <a class="p-2 text-dark" [routerLink]="['/shop']">Shop</a>
-    <a class="p-2 text-dark" href="#">Support</a>
-    <a class="p-2 text-dark" href="#">Pricing</a>
-    <a *ngIf="isLoggedIn" class="p-2 text-dark" [routerLink]="['/profile']">Profile ({{ username }})</a>
+    <div *ngIf="showAdminBoard || showModeratorBoard">
+        <a id="dropdownMenu1" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+           class="btn btn-outline-secondary">Admin menu</a>
+        <ul aria-labelledby="dropdownMenu1" class="dropdown-menu border-0 shadow">
+          <li><a *ngIf="showAdminBoard || showModeratorBoard" [routerLink]="['/administrator']" class="dropdown-item">Administrator</a></li>
+          <li><a *ngIf="showModeratorBoard" [routerLink]="['/moderator']" class="dropdown-item">Moderator</a></li>
+        </ul>
+    </div>
   </nav>
-  <a *ngIf="!isLoggedIn" class="btn btn-primary" [routerLink]="['/register']">Sign up</a>
-  <a *ngIf="!isLoggedIn" class="btn btn-outline-secondary" [routerLink]="['/login']">Login</a>
-  <a *ngIf="isLoggedIn" class="btn btn-danger" (click)="logout()">LogOut</a>
+    <a class="p-2 text-dark" [routerLink]="['/shop']">Shop</a>
+    <a class="p-2 text-dark" [routerLink]="['/support']">Support</a>
+    <a *ngIf="isLoggedIn" class="p-2 text-dark" [routerLink]="['/profile']">Profile ({{ username }})</a>
+    <a *ngIf="!isLoggedIn" class="btn btn-primary" [routerLink]="['/register']">Sign up</a>
+    <a *ngIf="!isLoggedIn" class="btn btn-outline-secondary" [routerLink]="['/login']">Login</a>
+    <a *ngIf="isLoggedIn" class="btn btn-danger" (click)="logout()">LogOut</a>
 </div>
 

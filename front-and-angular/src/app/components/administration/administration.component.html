@@ -1,5 +1,5 @@
 <div class="row">
-  <div class="col-lg-7 mx-auto">
+  <div class="col-lg-12 mx-auto">
     <div class="card border-0 shadow">
       <div class="card-body p-5">
         <!-- Responsive table -->
@@ -8,101 +8,32 @@
             <thead>
             <tr>
               <th scope="col">#</th>
-              <th scope="col">First</th>
-              <th scope="col">Last</th>
-              <th scope="col">Handle</th>
+              <th scope="col">Username</th>
+              <th scope="col">Is User</th>
+              <th scope="col">Is Moderator</th>
               <th scope="col"></th>
             </tr>
             </thead>
-            <tbody>
+            <tbody *ngFor="let user of users; let i = index">
             <tr>
-              <th scope="row">1</th>
-              <td>Mark</td>
-              <td>Otto</td>
-              <td>@mdo</td>
+              <th scope="row">{{i + 1}}</th>
+              <td>{{user.username}}</td>
+              <td>{{user.roles[0].name === 'ROLE_USER' || user.roles[1].name === 'ROLE_USER'}}</td>
+              <td>{{user.roles[0].name === 'ROLE_MODERATOR' || user.roles[1].name === 'ROLE_MODERATOR'}}</td>
+
               <td>
-                <!-- Call to action buttons -->
                 <ul class="list-inline m-0">
                   <li class="list-inline-item">
-                    <button class="btn btn-primary btn-sm rounded-0" type="button" data-toggle="tooltip"
-                            data-placement="top" title="Add"><i class="fa fa-table"></i></button>
+                    <button (click)="updateRole(user.username, 'update', 'USER_MODERATOR')" class="btn btn-primary btn-sm rounded-0" type="button" data-toggle="tooltip"
+                            data-placement="top" title="Raise to MODERATOR!"><i class="fa fa-table"></i></button>
                   </li>
                   <li class="list-inline-item">
-                    <button class="btn btn-success btn-sm rounded-0" type="button" data-toggle="tooltip"
-                            data-placement="top" title="Edit"><i class="fa fa-edit"></i></button>
+                    <button (click)="updateRole(user.username, 'delete', 'USER_MODERATOR')" class="btn btn-success btn-sm rounded-0" type="button" data-toggle="tooltip"
+                            data-placement="top" title="Lower to USER!"><i class="fa fa-edit"></i></button>
                   </li>
                   <li class="list-inline-item">
                     <button class="btn btn-danger btn-sm rounded-0" type="button" data-toggle="tooltip"
-                            data-placement="top" title="Delete"><i class="fa fa-trash"></i></button>
-                  </li>
-                </ul>
-              </td>
-            </tr>
-            <tr>
-              <th scope="row">2</th>
-              <td>Jacob</td>
-              <td>Thornton</td>
-              <td>@fat</td>
-              <td>
-                <!-- Call to action buttons -->
-                <ul class="list-inline m-0">
-                  <li class="list-inline-item">
-                    <button class="btn btn-primary btn-sm rounded-0" type="button" data-toggle="tooltip"
-                            data-placement="top" title="Add"><i class="fa fa-table"></i></button>
-                  </li>
-                  <li class="list-inline-item">
-                    <button class="btn btn-success btn-sm rounded-0" type="button" data-toggle="tooltip"
-                            data-placement="top" title="Edit"><i class="fa fa-edit"></i></button>
-                  </li>
-                  <li class="list-inline-item">
-                    <button class="btn btn-danger btn-sm rounded-0" type="button" data-toggle="tooltip"
-                            data-placement="top" title="Delete"><i class="fa fa-trash"></i></button>
-                  </li>
-                </ul>
-              </td>
-            </tr>
-            <tr>
-              <th scope="row">3</th>
-              <td>Larry</td>
-              <td>Bird</td>
-              <td>@twitter</td>
-              <td>
-                <!-- Call to action buttons -->
-                <ul class="list-inline m-0">
-                  <li class="list-inline-item">
-                    <button class="btn btn-primary btn-sm rounded-0" type="button" data-toggle="tooltip"
-                            data-placement="top" title="Add"><i class="fa fa-table"></i></button>
-                  </li>
-                  <li class="list-inline-item">
-                    <button class="btn btn-success btn-sm rounded-0" type="button" data-toggle="tooltip"
-                            data-placement="top" title="Edit"><i class="fa fa-edit"></i></button>
-                  </li>
-                  <li class="list-inline-item">
-                    <button class="btn btn-danger btn-sm rounded-0" type="button" data-toggle="tooltip"
-                            data-placement="top" title="Delete"><i class="fa fa-trash"></i></button>
-                  </li>
-                </ul>
-              </td>
-            </tr>
-            <tr>
-              <th scope="row">4</th>
-              <td>Martin</td>
-              <td>Williams</td>
-              <td>@Marty</td>
-              <td>
-                <!-- Call to action buttons -->
-                <ul class="list-inline m-0">
-                  <li class="list-inline-item">
-                    <button class="btn btn-primary btn-sm rounded-0" type="button" data-toggle="tooltip"
-                            data-placement="top" title="Add"><i class="fa fa-table"></i></button>
-                  </li>
-                  <li class="list-inline-item">
-                    <button class="btn btn-success btn-sm rounded-0" type="button" data-toggle="tooltip"
-                            data-placement="top" title="Edit"><i class="fa fa-edit"></i></button>
-                  </li>
-                  <li class="list-inline-item">
-                    <button class="btn btn-danger btn-sm rounded-0" type="button" data-toggle="tooltip"
-                            data-placement="top" title="Delete"><i class="fa fa-trash"></i></button>
+                            data-placement="top" title="Delete this USER!"><i class="fa fa-trash"></i></button>
                   </li>
                 </ul>
               </td>

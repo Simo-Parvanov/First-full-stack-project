@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import {HttpClient, HttpHeaders} from '@angular/common/http';
 import { Observable } from 'rxjs';
 import {tap} from 'rxjs/operators';
 
@@ -8,9 +8,14 @@ const API_URL = 'http://localhost:8080/api/test/';
 const USER_API = 'http://localhost:8080/mod/';
 const USER_DEL = 'http://localhost:8080/mod/';
 
+const httpOptions = {
+  headers: new HttpHeaders({ 'Content-Type': 'application/json' })
+};
+
 @Injectable({
   providedIn: 'root'
 })
+
 export class UserService {
 
   constructor(private http: HttpClient) { }
@@ -36,5 +41,8 @@ export class UserService {
 
   deleteUser(username) {
     return this.http.delete(USER_API + username).pipe(tap(console.log));
+  }
+  updateRole(username: string, method: string, role: string): Observable<any>{
+    return this.http.post(USER_API + username + '/' + method + '/' + role, httpOptions).pipe(tap(console.log));
   }
 }
