@@ -1,5 +1,6 @@
 package com.svc.myproject.services;
 
+import com.svc.myproject.domain.models.services.UpdateRoleServiceModel;
 import com.svc.myproject.domain.models.services.UserServiceModel;
 import com.svc.myproject.payload.request.SignupRequest;
 
@@ -12,7 +13,8 @@ public interface UserService {
 
    boolean findUserByEmail(String email);
    
-   List<UserServiceModel> roleUpdate(String username, String method, String roleName);
+   List<UserServiceModel> roleUpdate(UpdateRoleServiceModel updateRoleServiceModel);
 
    List<UserServiceModel> allUsers();
+   List<UserServiceModel> deleteUser(String username);
 }

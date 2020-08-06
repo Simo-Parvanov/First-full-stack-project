@@ -3,6 +3,8 @@
     <div class="card border-0 shadow">
       <div class="card-body p-5">
         <!-- Responsive table -->
+        <h4 class="blinking text-center">{{errorMassage}}</h4>
+
         <div class="table-responsive">
           <table class="table m-0">
             <thead>
@@ -15,24 +17,23 @@
             </tr>
             </thead>
             <tbody *ngFor="let user of users; let i = index">
-            <tr>
-              <th scope="row">{{i + 1}}</th>
+            <tr *ngIf="user.roles[0].name != 'ROLE_MODERATOR'">
+              <th scope="row">{{i}}</th>
               <td>{{user.username}}</td>
-              <td>{{user.roles[0].name === 'ROLE_USER' || user.roles[1].name === 'ROLE_USER'}}</td>
-              <td>{{user.roles[0].name === 'ROLE_MODERATOR' || user.roles[1].name === 'ROLE_MODERATOR'}}</td>
-
+              <td *ngIf="user.roles.sort().length  === 1">{{user.roles[0].name === 'ROLE_USER'}}</td>
+              <td>{{user.roles.sort()[0].name === 'ROLE_ADMINISTRATOR'}}</td>
               <td>
                 <ul class="list-inline m-0">
                   <li class="list-inline-item">
-                    <button (click)="updateRole(user.username, 'update', 'USER_MODERATOR')" class="btn btn-primary btn-sm rounded-0" type="button" data-toggle="tooltip"
+                    <button (click)="updateOrDeleteRole(user.username, 'update', 'ROLE_MODERATOR')" class="btn btn-primary btn-sm rounded-0" type="button" data-toggle="tooltip"
                             data-placement="top" title="Raise to MODERATOR!"><i class="fa fa-table"></i></button>
                   </li>
                   <li class="list-inline-item">
-                    <button (click)="updateRole(user.username, 'delete', 'USER_MODERATOR')" class="btn btn-success btn-sm rounded-0" type="button" data-toggle="tooltip"
+                    <button (click)="updateOrDeleteRole(user.username, 'delete', 'ROLE_MODERATOR')" class="btn btn-success btn-sm rounded-0" type="button" data-toggle="tooltip"
                             data-placement="top" title="Lower to USER!"><i class="fa fa-edit"></i></button>
                   </li>
                   <li class="list-inline-item">
-                    <button class="btn btn-danger btn-sm rounded-0" type="button" data-toggle="tooltip"
+                    <button (click)="delete(user.username)" class="btn btn-danger btn-sm rounded-0" type="button" data-toggle="tooltip"
                             data-placement="top" title="Delete this USER!"><i class="fa fa-trash"></i></button>
                   </li>
                 </ul>

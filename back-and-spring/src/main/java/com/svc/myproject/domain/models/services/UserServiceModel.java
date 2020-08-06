@@ -2,13 +2,14 @@ package com.svc.myproject.domain.models.services;
 
 import com.svc.myproject.domain.entities.Role;
 
+import java.util.List;
 import java.util.Set;
 
 public class UserServiceModel {
     private Long id;
     private String username;
     private String email;
-    private Set<Role> roles;
+    private List<Role> roles;
 
     public UserServiceModel() {
     }
@@ -37,11 +38,11 @@ public class UserServiceModel {
         this.email = email;
     }
 
-    public Set<Role> getRoles() {
+    public List<Role> getRoles() {
         return roles;
     }
 
-    public void setRoles(Set<Role> roles) {
+    public void setRoles(List<Role> roles) {
         this.roles = roles;
     }
 }

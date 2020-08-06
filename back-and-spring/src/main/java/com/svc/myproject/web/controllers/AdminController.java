@@ -1,8 +1,7 @@
 package com.svc.myproject.web.controllers;
 
-import com.svc.myproject.domain.entities.User;
+import com.svc.myproject.domain.models.services.UpdateRoleServiceModel;
 import com.svc.myproject.domain.models.services.UserServiceModel;
-import com.svc.myproject.repository.UserRepository;
 import com.svc.myproject.services.UserService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -15,11 +14,9 @@ import java.util.List;
 @RestController
 @RequestMapping("/mod")
 public class AdminController {
-    private final UserRepository userRepository;
     private final UserService userService;
 
-    public AdminController(UserRepository userRepository, UserService userService) {
-        this.userRepository = userRepository;
+    public AdminController( UserService userService) {
         this.userService = userService;
     }
 
@@ -31,22 +28,23 @@ public class AdminController {
     }
     @DeleteMapping("/{username}")
     @PreAuthorize("hasRole('ROLE_ADMIN')")
-    public ResponseEntity<List<User>> dellUser(@PathVariable String username){
-        userRepository.deleteById(userRepository.findByUsername(username).get().getId());
-        List<User> u = userRepository.findAll();
-        return ResponseEntity.ok(u);
-    }
-    
-    @PostMapping("/{username}/{method}/{role}")
-    @PreAuthorize("hasRole('ROLE_ADMIN')")
-    public ResponseEntity<List<UserServiceModel>> sendOrDeleteRole(@PathVariable String username,
-                                                                   @PathVariable String method,
-                                                                   @PathVariable String role){
-        List<UserServiceModel> userServiceModels = userService.roleUpdate(username,method,role);
+    public ResponseEntity<List<UserServiceModel>> dellUser(@PathVariable String username){
+        List<UserServiceModel> userServiceModels = userService.deleteUser(username);
         if (userServiceModels == null){
             return new ResponseEntity<>(HttpStatus.NOT_FOUND);
         }
+        return ResponseEntity.ok(userServiceModels);
+    }
+    
+    @PostMapping("/update")
+    @PreAuthorize("hasRole('ROLE_ADMIN')")
+    public ResponseEntity<List<UserServiceModel>> sendOrDeleteRole(
+            @RequestBody UpdateRoleServiceModel updateRoleServiceModel){
+        List<UserServiceModel> userServiceModels = userService.roleUpdate(updateRoleServiceModel);
 
+        if (userServiceModels == null){
+            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+        }
         return new ResponseEntity<>(userServiceModels, HttpStatus.OK);
     }
 }

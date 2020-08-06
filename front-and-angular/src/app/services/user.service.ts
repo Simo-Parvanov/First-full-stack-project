@@ -42,7 +42,8 @@ export class UserService {
   deleteUser(username) {
     return this.http.delete(USER_API + username).pipe(tap(console.log));
   }
-  updateRole(username: string, method: string, role: string): Observable<any>{
-    return this.http.post(USER_API + username + '/' + method + '/' + role, httpOptions).pipe(tap(console.log));
+  updateRole(params): Observable<any>{
+    console.log(params, 'service-class')
+    return this.http.post(USER_API + 'update', params, httpOptions).pipe(tap(console.log));
   }
 }

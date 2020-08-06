@@ -12,7 +12,8 @@ export class AdministrationComponent implements OnInit {
   roles: string[];
   users: any ;
   adminRole: any;
-  params: string [];
+  params: {};
+  errorMassage = '';
   constructor(private userService: UserService, private token: TokenStorageService) { }
 
   ngOnInit(): void {
@@ -30,8 +31,15 @@ export class AdministrationComponent implements OnInit {
     this.roles = user.roles;
     this.adminRole = this.roles.includes('ROLE_ADMIN');
   }
-  updateRole(username: string, method: string, role: string){
-  this.params = [username, method, role];
-    this.userService.updateRole(username, method, role)
+  updateOrDeleteRole(username: string, method: string, role: string){
+  this.params = {username, method, role};
+    this.userService.updateRole(this.params).subscribe(data => {
+      this.users = data
+    },error => {
+      this.errorMassage = 'You do not have permission to perform this operation!'
+    });
+  }
+  delete(username: string){
+    this.userService.deleteUser(username).subscribe(data => this.users = data);
   }
 }

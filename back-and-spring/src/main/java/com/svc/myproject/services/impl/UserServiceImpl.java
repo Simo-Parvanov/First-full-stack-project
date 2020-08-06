@@ -3,6 +3,7 @@ package com.svc.myproject.services.impl;
 import com.svc.myproject.domain.entities.ERole;
 import com.svc.myproject.domain.entities.Role;
 import com.svc.myproject.domain.entities.User;
+import com.svc.myproject.domain.models.services.UpdateRoleServiceModel;
 import com.svc.myproject.domain.models.services.UserServiceModel;
 import com.svc.myproject.payload.request.SignupRequest;
 import com.svc.myproject.repository.UserRepository;
@@ -12,10 +13,7 @@ import org.modelmapper.ModelMapper;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 
-import java.util.HashSet;
-import java.util.List;
-import java.util.Optional;
-import java.util.Set;
+import java.util.*;
 import java.util.stream.Collectors;
 
 @Service
@@ -41,8 +39,9 @@ public class UserServiceImpl implements UserService {
                 passwordEncoder.encode(signUpRequest.getPassword()));
 
         if (userRepository.count() == 0) {
-            roles.add(roleService.findByRoleName(ERole.ROLE_ADMIN));
             roles.add(roleService.findByRoleName(ERole.ROLE_MODERATOR));
+            roles.add(roleService.findByRoleName(ERole.ROLE_ADMIN));
+
         } else {
             roles.add(roleService.findByRoleName(ERole.ROLE_USER));
         }
@@ -62,19 +61,19 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public List<UserServiceModel> roleUpdate(String username, String method, String roleName) {
-        Optional<User> user = userRepository.findByUsername(username);
+    public List<UserServiceModel> roleUpdate(UpdateRoleServiceModel update) {
+        Optional<User> user = userRepository.findByUsername(update.getUsername());
         if (user.isEmpty()) {
             return null;
         }
-        if (method.equals("update")) {
+        if (update.getMethod().equals("update")) {
             Set<Role> roles = user.get().getRoles();
-            roles.add(roleService.findByRoleName(ERole.valueOf(roleName)));
+            roles.add(roleService.findByRoleName(ERole.ROLE_MODERATOR));
             user.get().setRoles(roles);
         }
-        if (method.equals("delete")) {
+        if (update.getMethod().equals("delete")) {
             Set<Role> roles = user.get().getRoles();
-            roles.remove(roleService.findByRoleName(ERole.valueOf(roleName)));
+            roles.remove(roleService.findByRoleName(ERole.ROLE_MODERATOR));
             user.get().setRoles(roles);
         }
         userRepository.saveAndFlush(user.get());
@@ -85,7 +84,25 @@ public class UserServiceImpl implements UserService {
     @Override
     public List<UserServiceModel> allUsers() {
         return userRepository.findAll().stream().map(user -> {
-           return mapper.map(user, UserServiceModel.class);
+            UserServiceModel model = mapper.map(user, UserServiceModel.class);
+            List<Role> list = new ArrayList<>(user.getRoles());
+            List<Role> collect = list.stream().sorted((a, b) -> a.getName().compareTo(b.getName()))
+                    .collect(Collectors.toList());
+            model.setRoles(collect);
+            return model;
+        }).collect(Collectors.toList());
+    }
+
+    @Override
+    public List<UserServiceModel> deleteUser(String username) {
+        Optional<User> user = userRepository.findByUsername(username);
+        if (user.isEmpty()){
+            return null;
+        }
+        userRepository.delete(user.get());
+
+        return userRepository.findAll().stream().map(user1 -> {
+            return mapper.map(user1, UserServiceModel.class);
         }).collect(Collectors.toList());
     }
 }
