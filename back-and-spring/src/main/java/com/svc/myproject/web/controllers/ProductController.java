@@ -17,12 +17,9 @@ import java.util.List;
 @CrossOrigin(origins = "*", maxAge = 3600)
 @RequestMapping("/product")
 public class ProductController {
-    private final ProductRepository productRepository;
     private final ProductService productService;
 
-    public ProductController(ProductRepository productRepository,
-                             ProductService productService) {
-        this.productRepository = productRepository;
+    public ProductController(ProductService productService) {
         this.productService = productService;
     }
 
@@ -48,7 +45,7 @@ public class ProductController {
     @DeleteMapping("/delete/{id}")
     @PreAuthorize("hasRole('ROLE_ADMIN') or hasRole('ROLE_MODERATOR')")
     public ResponseEntity<?> deleteProduct(@PathVariable String id){
-        productRepository.deleteById(id);
+        productService.deleteProduct(id);
         return ResponseEntity.noContent().build();
     }
 

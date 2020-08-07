@@ -7,6 +7,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.util.UriComponentsBuilder;
 
 import java.util.List;
 
@@ -33,18 +34,22 @@ public class AdminController {
         if (userServiceModels == null){
             return new ResponseEntity<>(HttpStatus.NOT_FOUND);
         }
-        return ResponseEntity.ok(userServiceModels);
+        return ResponseEntity.noContent().build();
+//        return ResponseEntity.ok(userServiceModels);
     }
     
     @PostMapping("/update")
     @PreAuthorize("hasRole('ROLE_ADMIN')")
     public ResponseEntity<List<UserServiceModel>> sendOrDeleteRole(
-            @RequestBody UpdateRoleServiceModel updateRoleServiceModel){
+            @RequestBody UpdateRoleServiceModel updateRoleServiceModel,
+            UriComponentsBuilder builder){
         List<UserServiceModel> userServiceModels = userService.roleUpdate(updateRoleServiceModel);
 
         if (userServiceModels == null){
             return new ResponseEntity<>(HttpStatus.NOT_FOUND);
         }
-        return new ResponseEntity<>(userServiceModels, HttpStatus.OK);
+        return ResponseEntity.created(builder.path("/api/auth/signup")
+                .buildAndExpand().toUri()).build();
+//        return new ResponseEntity<>(userServiceModels, HttpStatus.OK);
     }
 }

@@ -14,6 +14,7 @@ import org.springframework.security.core.Authentication;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.util.UriComponentsBuilder;
 
 import javax.validation.Valid;
 import java.util.List;
@@ -38,7 +39,8 @@ public class AuthController {
 	}
 
 	@PostMapping("/signin")
-	public ResponseEntity<?> authenticateUser(@Valid @RequestBody LoginRequest loginRequest) {
+	public ResponseEntity<?> authenticateUser(@Valid @RequestBody LoginRequest loginRequest,
+											  UriComponentsBuilder builder) {
 		Authentication authentication = authenticationManager.authenticate(
 				new UsernamePasswordAuthenticationToken(loginRequest.getUsername(),
 						loginRequest.getPassword()));
@@ -51,15 +53,18 @@ public class AuthController {
 				.map(GrantedAuthority::getAuthority)
 				.collect(Collectors.toList());
 
-		return ResponseEntity.ok(new JwtResponse(jwt, 
-												 userDetails.getId(), 
-												 userDetails.getUsername(), 
-												 userDetails.getEmail(), 
+		return ResponseEntity.ok(new JwtResponse(jwt,
+												 userDetails.getId(),
+												 userDetails.getUsername(),
+												 userDetails.getEmail(),
 												 roles));
+//		return ResponseEntity.created(builder.path("/api/auth/signin")
+//				.buildAndExpand().toUri()).build();
 	}
 
 	@PostMapping("/signup")
-	public ResponseEntity<?> registerUser(@Valid @RequestBody SignupRequest signUpRequest) {
+	public ResponseEntity<?> registerUser(@Valid @RequestBody SignupRequest signUpRequest,
+										  UriComponentsBuilder builder) {
 
 		if (userService.findUserByName(signUpRequest.getUsername())) {
 			return ResponseEntity
@@ -73,6 +78,8 @@ public class AuthController {
 					.body(new MessageResponse("Error: Email is already in use!"));
 		}
 		userService.createUser(signUpRequest);
-		return ResponseEntity.ok(new MessageResponse("User registered successfully!"));
+		return ResponseEntity.created(builder.path("/api/auth/signup")
+				.buildAndExpand().toUri()).build();
+//		return ResponseEntity.ok(new MessageResponse("User registered successfully!"));
 	}
 }

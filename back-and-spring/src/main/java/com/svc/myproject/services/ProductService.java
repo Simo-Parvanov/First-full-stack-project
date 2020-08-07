@@ -18,5 +18,5 @@ public interface ProductService {
 
     ProductServiceModelView productById(String id);
 
-
+    void deleteProduct(String id);
 }

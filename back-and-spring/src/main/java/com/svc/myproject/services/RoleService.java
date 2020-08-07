@@ -7,6 +7,8 @@ import java.util.Set;
 
 public interface RoleService {
     void seedRole();
+
     Set<Role> getAllRole();
+
     Role findByRoleName(ERole name);
 }

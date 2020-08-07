@@ -17,19 +17,19 @@
             </tr>
             </thead>
             <tbody *ngFor="let user of users; let i = index">
-            <tr>
+            <tr *ngIf="!(isAdmin(user.roles) && isModerator(user.roles))">
               <th scope="row">{{i}}</th>
               <td>{{user.username}}</td>
               <td>true</td>
-              <td>{{user.roles.sort().name === 'ROLE_ADMINISTRATOR' || user.roles[0].name === 'ROLE_ADMINISTRATOR'}}</td>
+              <td>{{isModerator(user.roles)}}</td>
               <td>
                 <ul class="list-inline m-0">
                   <li class="list-inline-item">
-                    <button (click)="updateOrDeleteRole(user.username, 'update', 'ROLE_MODERATOR')" class="btn btn-primary btn-sm rounded-0" type="button" data-toggle="tooltip"
+                    <button (click)="updateOrDeleteRole(user.username, 'update', 'ROLE_MODERATOR')" class="btn btn-success btn-sm rounded-0" type="button" data-toggle="tooltip"
                             data-placement="top" title="Raise to MODERATOR!"><i class="fa fa-table"></i></button>
                   </li>
                   <li class="list-inline-item">
-                    <button (click)="updateOrDeleteRole(user.username, 'delete', 'ROLE_MODERATOR')" class="btn btn-success btn-sm rounded-0" type="button" data-toggle="tooltip"
+                    <button (click)="updateOrDeleteRole(user.username, 'delete', 'ROLE_MODERATOR')" class="btn btn-warning btn-sm rounded-0" type="button" data-toggle="tooltip"
                             data-placement="top" title="Lower to USER!"><i class="fa fa-edit"></i></button>
                   </li>
                   <li class="list-inline-item">

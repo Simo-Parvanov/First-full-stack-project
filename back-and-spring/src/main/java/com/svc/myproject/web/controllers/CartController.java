@@ -16,7 +16,6 @@ public class CartController {
 
     @PostMapping()
     public ResponseEntity<?> addCart(@RequestBody CartServiceModel cartServiceModel){
-        System.out.println();
         return ResponseEntity.ok().build();
     }
 }

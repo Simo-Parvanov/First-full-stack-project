@@ -96,7 +96,7 @@ public class UserServiceImpl implements UserService {
     @Override
     public List<UserServiceModel> deleteUser(String username) {
         Optional<User> user = userRepository.findByUsername(username);
-        if (user.isEmpty()){
+        if (user.isEmpty()) {
             return null;
         }
         userRepository.delete(user.get());
@@ -105,4 +105,5 @@ public class UserServiceImpl implements UserService {
             return mapper.map(user1, UserServiceModel.class);
         }).collect(Collectors.toList());
     }
+
 }

@@ -42,4 +42,21 @@ export class AdministrationComponent implements OnInit {
   delete(username: string){
     this.userService.deleteUser(username).subscribe(data => this.users = data);
   }
+  isModerator(roles){
+    for (const role of roles) {
+      if (role.name === 'ROLE_MODERATOR'){
+        return true;
+      }
+    }
+    return false;
+  }
+
+  isAdmin(roles){
+    for (const role of roles) {
+      if (role.name === 'ROLE_ADMIN'){
+        return true;
+      }
+    }
+    return false;
+  }
 }

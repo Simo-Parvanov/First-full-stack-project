@@ -3,7 +3,6 @@ package com.svc.myproject.domain.models.services;
 import com.svc.myproject.domain.entities.Role;
 
 import java.util.List;
-import java.util.Set;
 
 public class UserServiceModel {
     private Long id;

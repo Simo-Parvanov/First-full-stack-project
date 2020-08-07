@@ -79,6 +79,11 @@ public class ProductServiceImpl implements ProductService {
         return productServiceModelView;
     }
 
+    @Override
+    public void deleteProduct(String id) {
+        productRepository.deleteById(id);
+    }
+
     private int getDiscount(Double currentPrice, Double updatePrice) {
         double result = 100 - ((updatePrice / currentPrice) * 100);
         return (int) Math.round(result);

@@ -1,7 +1,5 @@
-import {Component, Input, OnInit} from '@angular/core';
-import {ProductModel} from 'src/app/components/models/product-model';
-import {ActivatedRoute, Router, UrlMatchResult} from '@angular/router';
-import {ProductItemComponent} from '../shoping-cart/product-list/product-item/product-item.component';
+import {Component, OnInit} from '@angular/core';
+import {ActivatedRoute, Router} from '@angular/router';
 import {ProductService} from 'src/app/services/product.service';
 
 @Component({
@@ -22,11 +20,11 @@ export class ProductDetailComponent implements OnInit {
     console.log(this.productData)
     console.log(this.productData)
     console.log(this.productData)
-    this.loadProductDetails();
+    this.loadProductDetails(this.productID);
   }
 
-  loadProductDetails(){
-    this.productService.getProductDetails(this.productID).subscribe(data => {
+  loadProductDetails(productID){
+    this.productService.getProductDetails(productID).subscribe(data => {
       this.productData = data;
     })
   }
