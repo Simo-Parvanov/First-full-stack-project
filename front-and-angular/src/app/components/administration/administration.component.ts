@@ -14,6 +14,7 @@ export class AdministrationComponent implements OnInit {
   adminRole: any;
   params: {};
   errorMassage = '';
+  stat: any;
   constructor(private userService: UserService, private token: TokenStorageService) { }
 
   ngOnInit(): void {
@@ -58,5 +59,8 @@ export class AdministrationComponent implements OnInit {
       }
     }
     return false;
+  }
+  statistic(){
+    this.userService.getStat().subscribe(data => this.stat = data)
   }
 }

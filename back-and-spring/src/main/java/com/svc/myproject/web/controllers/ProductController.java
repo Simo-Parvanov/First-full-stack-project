@@ -14,7 +14,7 @@ import org.springframework.web.util.UriComponentsBuilder;
 import java.util.List;
 
 @RestController
-@CrossOrigin(origins = "*", maxAge = 3600)
+@CrossOrigin(origins = "http://localhost:4200")
 @RequestMapping("/product")
 public class ProductController {
     private final ProductService productService;
@@ -51,7 +51,7 @@ public class ProductController {
 
     @PutMapping("/update/{id}")
     @PreAuthorize("hasRole('ROLE_ADMIN') or hasRole('ROLE_MODERATOR')")
-    public ResponseEntity<?> update(@PathVariable String id,
+    public ResponseEntity<ProductServiceModelView> update(@PathVariable String id,
                                     @RequestBody ProductServiceUpdateModel updateModel){
         if (productService.findProductById(id) == null){
             return new ResponseEntity<>(HttpStatus.NOT_FOUND);

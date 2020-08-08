@@ -6,7 +6,7 @@ import {tap} from 'rxjs/operators';
 
 const API_URL = 'http://localhost:8080/api/test/';
 const USER_API = 'http://localhost:8080/mod/';
-const USER_DEL = 'http://localhost:8080/mod/';
+const STATISTIC = 'http://localhost:8080/statistic/';
 
 const httpOptions = {
   headers: new HttpHeaders({ 'Content-Type': 'application/json' })
@@ -46,5 +46,9 @@ export class UserService {
   updateRole(params): Observable<any>{
     console.log(params, 'service-class')
     return this.http.post(USER_API + 'update', params, httpOptions).pipe(tap(console.log));
+  }
+
+  getStat(): Observable<any>{
+    return this.http.get<any>(STATISTIC).pipe(tap(console.log));
   }
 }
