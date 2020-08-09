@@ -2,22 +2,39 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="912237e0-145c-47d9-9a08-f9b11b35a32d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/svc/myproject/config/WebConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/svc/myproject/domain/entities/Order.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/svc/myproject/domain/models/services/StatServiceModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/svc/myproject/stat/StatService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/svc/myproject/stat/Statistic.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/svc/myproject/web/controllers/StatController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hsqldb_hsqldb_2_4_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/svc/myproject/domain/models/services/CategoryServiceModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/svc/myproject/web/AuthControllerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../front-and-angular/src/app/components/administration/statistic/statistic.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../front-and-angular/src/app/components/administration/statistic/statistic.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../front-and-angular/src/app/components/administration/statistic/statistic.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../front-and-angular/src/app/components/administration/statistic/statistic.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../front-and-angular/src/app/components/shoping-cart/cart/checkout/checkout.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../front-and-angular/src/app/components/shoping-cart/cart/checkout/checkout.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../front-and-angular/src/app/components/shoping-cart/cart/checkout/checkout.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../front-and-angular/src/app/components/shoping-cart/cart/checkout/checkout.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/57a4c848-045c-4400-924a-6a7942d946b8.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/57a4c848-045c-4400-924a-6a7942d946b8.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/svc/myproject/web/controllers/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/svc/myproject/web/controllers/AdminController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/svc/myproject/web/controllers/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/svc/myproject/web/controllers/AuthController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/svc/myproject/web/controllers/CartController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/svc/myproject/web/controllers/CartController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/svc/myproject/web/controllers/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/svc/myproject/web/controllers/MainController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back-and.iml" beforeDir="false" afterPath="$PROJECT_DIR$/back-and.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/svc/myproject/RestApplicationInit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/svc/myproject/RestApplicationInit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/svc/myproject/domain/entities/CategoryEnumTwo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/svc/myproject/domain/entities/CategoryEnumTwo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/svc/myproject/repository/ProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/svc/myproject/repository/ProductRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/svc/myproject/security/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/svc/myproject/security/WebSecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/svc/myproject/services/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/svc/myproject/services/ProductService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/svc/myproject/services/impl/ProductServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/svc/myproject/services/impl/ProductServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/svc/myproject/web/controllers/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/svc/myproject/web/controllers/CloudinaryController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/svc/myproject/web/controllers/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/svc/myproject/web/controllers/ProductController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/svc/myproject/web/controllers/TicketController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/svc/myproject/web/controllers/TicketController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/svc/myproject/web/controllers/TestController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../front-and-angular/src/app/app-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../front-and-angular/src/app/app.module.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../front-and-angular/src/app/components/administration/administration.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../front-and-angular/src/app/components/administration/administration.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../front-and-angular/src/app/components/administration/administration.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../front-and-angular/src/app/components/administration/administration.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front-and-angular/src/app/services/user.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../front-and-angular/src/app/services/user.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/src/app/components/shared/nav/nav.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../front-and-angular/src/app/components/shared/nav/nav.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/src/app/components/shoping-cart/cart/cart-details/cart-details.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../front-and-angular/src/app/components/shoping-cart/cart/cart-details/cart-details.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/src/app/components/shoping-cart/cart/cart-details/cart-details.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../front-and-angular/src/app/components/shoping-cart/cart/cart-details/cart-details.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/src/app/components/shoping-cart/cart/cart.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../front-and-angular/src/app/components/shoping-cart/cart/cart.component.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +72,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../front-and-angular" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test/resources" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -66,10 +83,42 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Simo\Desktop\WEB\web\Angular\back-and-spring\src\test\resources" />
       <recent name="C:\Users\Simo\Desktop\New folder (2)\spring-boot-spring-security-jwt-authentication" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Spring Boot.SpringBootSecurityJwtApplication">
+    <configuration name="AuthControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="back-and" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.svc.myproject.web.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.svc.myproject.web" />
+      <option name="MAIN_CLASS_NAME" value="com.svc.myproject.web.AuthControllerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AuthControllerTest.testCorrectStatusForUserRegister" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="back-and" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.svc.myproject.web.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.svc.myproject.web" />
+      <option name="MAIN_CLASS_NAME" value="com.svc.myproject.web.AuthControllerTest" />
+      <option name="METHOD_NAME" value="testCorrectStatusForUserRegister" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="SpringBootSecurityJwtApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="back-and" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.svc.myproject.SpringBootSecurityJwtApplication" />
@@ -77,6 +126,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.AuthControllerTest.testCorrectStatusForUserRegister" />
+        <item itemvalue="JUnit.AuthControllerTest" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -98,7 +153,7 @@
       <workItem from="1595713785750" duration="34239000" />
       <workItem from="1596182281990" duration="309000" />
       <workItem from="1596182650382" duration="27149000" />
-      <workItem from="1596410769552" duration="75322000" />
+      <workItem from="1596410769552" duration="93695000" />
     </task>
     <servers />
   </component>
@@ -121,10 +176,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1596699546276" />
-    <state x="0" y="408" key="#com.intellij.ide.util.MemberChooser" timestamp="1596849764168">
+    <state x="0" y="408" key="#com.intellij.ide.util.MemberChooser" timestamp="1596924786392">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="0" y="408" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1596849764168" />
+    <state x="0" y="408" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1596924786392" />
     <state x="530" y="444" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1595372598261">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -141,58 +196,58 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1596473272236" />
-    <state width="1877" height="191" key="GridCell.Tab.0.bottom" timestamp="1596848640210">
+    <state width="1877" height="123" key="GridCell.Tab.0.bottom" timestamp="1596928877495">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="191" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1596848640210" />
-    <state width="1877" height="191" key="GridCell.Tab.0.center" timestamp="1596848640210">
+    <state width="1877" height="123" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1596928877494" />
+    <state width="1877" height="123" key="GridCell.Tab.0.center" timestamp="1596928877494">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="191" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1596848640210" />
-    <state width="1877" height="191" key="GridCell.Tab.0.left" timestamp="1596848640209">
+    <state width="1877" height="123" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1596928877494" />
+    <state width="1877" height="123" key="GridCell.Tab.0.left" timestamp="1596928877494">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="191" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1596848640209" />
-    <state width="1877" height="191" key="GridCell.Tab.0.right" timestamp="1596848640210">
+    <state width="1877" height="123" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1596928877494" />
+    <state width="1877" height="123" key="GridCell.Tab.0.right" timestamp="1596928877494">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="191" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1596848640210" />
-    <state width="1877" height="191" key="GridCell.Tab.1.bottom" timestamp="1596848640211">
+    <state width="1877" height="123" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1596928877494" />
+    <state width="1877" height="123" key="GridCell.Tab.1.bottom" timestamp="1596928877495">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="191" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1596848640211" />
-    <state width="1877" height="191" key="GridCell.Tab.1.center" timestamp="1596848640211">
+    <state width="1877" height="123" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1596928877495" />
+    <state width="1877" height="123" key="GridCell.Tab.1.center" timestamp="1596928877495">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="191" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1596848640211" />
-    <state width="1877" height="191" key="GridCell.Tab.1.left" timestamp="1596848640211">
+    <state width="1877" height="123" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1596928877495" />
+    <state width="1877" height="123" key="GridCell.Tab.1.left" timestamp="1596928877495">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="191" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1596848640211" />
-    <state width="1877" height="191" key="GridCell.Tab.1.right" timestamp="1596848640211">
+    <state width="1877" height="123" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1596928877495" />
+    <state width="1877" height="123" key="GridCell.Tab.1.right" timestamp="1596928877495">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="191" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1596848640211" />
-    <state width="1877" height="387" key="GridCell.Tab.2.bottom" timestamp="1596801954647">
+    <state width="1877" height="123" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1596928877495" />
+    <state width="1877" height="251" key="GridCell.Tab.2.bottom" timestamp="1596927689073">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="387" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1596801954647" />
-    <state width="1877" height="387" key="GridCell.Tab.2.center" timestamp="1596801954646">
+    <state width="1877" height="251" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1596927689073" />
+    <state width="1877" height="251" key="GridCell.Tab.2.center" timestamp="1596927689073">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="387" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1596801954646" />
-    <state width="1877" height="387" key="GridCell.Tab.2.left" timestamp="1596801954646">
+    <state width="1877" height="251" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1596927689073" />
+    <state width="1877" height="251" key="GridCell.Tab.2.left" timestamp="1596927689073">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="387" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1596801954646" />
-    <state width="1877" height="387" key="GridCell.Tab.2.right" timestamp="1596801954646">
+    <state width="1877" height="251" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1596927689073" />
+    <state width="1877" height="251" key="GridCell.Tab.2.right" timestamp="1596927689073">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="387" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1596801954646" />
-    <state width="196" height="457" key="HiddenNamespacesPopup" timestamp="1596799730762">
+    <state width="1877" height="251" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1596927689073" />
+    <state width="196" height="457" key="HiddenNamespacesPopup" timestamp="1596923000109">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="196" height="457" key="HiddenNamespacesPopup/0.0.1920.1040@0.0.1920.1040" timestamp="1596799730762" />
+    <state width="196" height="457" key="HiddenNamespacesPopup/0.0.1920.1040@0.0.1920.1040" timestamp="1596923000109" />
     <state x="490" y="175" key="Maven.ArtifactSearchDialog" timestamp="1596648806800">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -205,10 +260,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="968" height="528" key="XDebugger.FullValuePopup/0.0.1920.1040@0.0.1920.1040" timestamp="1595415278319" />
-    <state x="794" y="407" width="331" height="244" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1596799247572">
+    <state x="794" y="407" width="331" height="244" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1596922840969">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="794" y="407" width="331" height="244" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.0.1920.1040@0.0.1920.1040" timestamp="1596799247572" />
+    <state x="794" y="407" width="331" height="244" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.0.1920.1040@0.0.1920.1040" timestamp="1596922840969" />
     <state x="755" y="267" key="refactoring.ChangeSignatureDialog" timestamp="1596746076902">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -231,6 +286,16 @@
           <url>file://$PROJECT_DIR$/src/main/java/com/svc/myproject/services/impl/TicketServiceImpl.java</url>
           <line>57</line>
           <option name="timeStamp" value="45" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/svc/myproject/services/impl/ProductServiceImpl.java</url>
+          <line>94</line>
+          <option name="timeStamp" value="49" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/svc/myproject/web/controllers/ProductController.java</url>
+          <line>67</line>
+          <option name="timeStamp" value="50" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

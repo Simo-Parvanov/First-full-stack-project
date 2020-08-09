@@ -9,6 +9,7 @@ public enum CategoryEnumTwo {
     GRAPHIC_CARD,
     SSD,
     RAM,
+    COOLING,
     POWER_SUPPLY,
     PRINTER,
     SCANNER,

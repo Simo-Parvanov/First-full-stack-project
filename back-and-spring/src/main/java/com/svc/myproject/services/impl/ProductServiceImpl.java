@@ -1,7 +1,7 @@
 package com.svc.myproject.services.impl;
 
-import com.svc.myproject.domain.entities.Image;
-import com.svc.myproject.domain.entities.Product;
+import com.svc.myproject.domain.entities.*;
+import com.svc.myproject.domain.models.services.CategoryServiceModel;
 import com.svc.myproject.domain.models.services.ProductServiceModel;
 import com.svc.myproject.domain.models.services.ProductServiceModelView;
 import com.svc.myproject.domain.models.services.ProductServiceUpdateModel;
@@ -9,8 +9,10 @@ import com.svc.myproject.repository.ProductRepository;
 import com.svc.myproject.services.ImageService;
 import com.svc.myproject.services.ProductService;
 import org.modelmapper.ModelMapper;
+import org.springframework.security.core.parameters.P;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
@@ -52,6 +54,9 @@ public class ProductServiceImpl implements ProductService {
     @Override
     public ProductServiceModelView update(ProductServiceUpdateModel updateProduct, String id) {
         Optional<Product> product = productRepository.findById(id);
+        if (product.isEmpty()){
+            return null;
+        }
         product.get().setDescription(updateProduct.getDescription());
         if (product.get().getPrice() > updateProduct.getPrice() && updateProduct.isPromotion()){
             product.get().setPriceOld(product.get().getPrice());
@@ -65,18 +70,13 @@ public class ProductServiceImpl implements ProductService {
         product.get().setStatus(updateProduct.isStatus());
         productRepository.saveAndFlush(product.get());
 
-        ProductServiceModelView productServiceModelView = mapper.map(product.get(), ProductServiceModelView.class);
-        productServiceModelView.setImage(imageService.findAllByModel(product.get().getModel()));
-
-        return productServiceModelView;
+        return mapAndAddingImage(product.get());
     }
 
     @Override
     public ProductServiceModelView productById(String id) {
         Optional<Product> product = productRepository.findById(id);
-        ProductServiceModelView productServiceModelView = mapper.map(product.get(), ProductServiceModelView.class);
-        productServiceModelView.setImage(imageService.findAllByModel(product.get().getModel()));
-        return productServiceModelView;
+        return mapAndAddingImage(product.get());
     }
 
     @Override
@@ -84,8 +84,44 @@ public class ProductServiceImpl implements ProductService {
         productRepository.deleteById(id);
     }
 
+    @Override
+    public List<ProductServiceModelView> findByTwoCategories(CategoryServiceModel model) {
+        List<Product> product;
+        if (model.getCategorySecond() == null){
+            product = productRepository
+                    .findProductByOneParams
+                            (CategoryEnum.valueOf(model.getCategoryFirst()));
+        }else {
+            product = productRepository
+                    .findProductByTwoParams
+                            (CategoryEnum.valueOf(model.getCategoryFirst()),
+                                    CategoryEnumTwo.valueOf(model.getCategorySecond()));
+        }
+        if (product.isEmpty()) {
+            return null;
+        }
+        return addedImageAndMapper(product);
+    }
+
+    private List<ProductServiceModelView> addedImageAndMapper(List<Product> products) {
+        List<ProductServiceModelView> result = new ArrayList<>();
+        for (Product product : products) {
+            ProductServiceModelView productModel = mapper.map(product, ProductServiceModelView.class);
+            productModel.setImage(imageService.findAllByModel(product.getModel()));
+            result.add(productModel);
+        }
+        return result;
+    }
+
     private int getDiscount(Double currentPrice, Double updatePrice) {
         double result = 100 - ((updatePrice / currentPrice) * 100);
         return (int) Math.round(result);
     }
+
+    public ProductServiceModelView mapAndAddingImage(Product product){
+        ProductServiceModelView productServiceModelView = mapper.map(product, ProductServiceModelView.class);
+        productServiceModelView.setImage(imageService.findAllByModel(product.getModel()));
+        return productServiceModelView;
+    }
+
 }

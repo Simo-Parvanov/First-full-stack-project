@@ -10,6 +10,7 @@
         <ul aria-labelledby="dropdownMenu1" class="dropdown-menu border-0 shadow">
           <li><a *ngIf="showAdminBoard || showModeratorBoard" [routerLink]="['/administrator']" class="dropdown-item">Administrator</a></li>
           <li><a *ngIf="showModeratorBoard" [routerLink]="['/moderator']" class="dropdown-item">Moderator</a></li>
+          <li><a *ngIf="showAdminBoard || showModeratorBoard" [routerLink]="['/statistic']" class="dropdown-item">Statistic</a></li>
         </ul>
     </div>
   </nav>

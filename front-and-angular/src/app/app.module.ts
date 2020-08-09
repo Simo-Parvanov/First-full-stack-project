@@ -30,6 +30,8 @@ import { PageNotFoundComponent } from './components/shared/page-not-found/page-n
 import { CartDetailsComponent } from './components/shoping-cart/cart/cart-details/cart-details.component';
 import { AdministrationComponent } from './components/administration/administration.component';
 import { ProductDetailComponent } from './components/product-detail/product-detail.component';
+import { StatisticComponent } from './components/administration/statistic/statistic.component';
+import { CheckoutComponent } from './components/shoping-cart/cart/checkout/checkout.component';
 
 
 
@@ -54,6 +56,8 @@ import { ProductDetailComponent } from './components/product-detail/product-deta
     CartDetailsComponent,
     AdministrationComponent,
     ProductDetailComponent,
+    StatisticComponent,
+    CheckoutComponent,
 
 
   ],

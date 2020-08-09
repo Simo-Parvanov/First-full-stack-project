@@ -9,6 +9,8 @@ import {ProfileComponent} from './components/profile/profile.component';
 import {CartDetailsComponent} from 'src/app/components/shoping-cart/cart/cart-details/cart-details.component';
 import {AdministrationComponent} from 'src/app/components/administration/administration.component';
 import {ProductDetailComponent} from 'src/app/components/product-detail/product-detail.component';
+import {StatisticComponent} from 'src/app/components/administration/statistic/statistic.component';
+import {CheckoutComponent} from 'src/app/components/shoping-cart/cart/checkout/checkout.component';
 
 
 
@@ -21,6 +23,8 @@ const routes: Routes = [
   {path: 'profile', component: ProfileComponent},
   {path: 'administrator', component: AdministrationComponent},
   {path: 'product/:id', component: ProductDetailComponent},
+  {path: 'statistic', component: StatisticComponent},
+  {path: 'checkout', component: CheckoutComponent},
   {path: '**', component: PageNotFoundComponent}
 ];
 

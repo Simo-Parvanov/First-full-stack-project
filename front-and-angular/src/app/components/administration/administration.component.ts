@@ -60,7 +60,5 @@ export class AdministrationComponent implements OnInit {
     }
     return false;
   }
-  statistic(){
-    this.userService.getStat().subscribe(data => this.stat = data)
-  }
+
 }

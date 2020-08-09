@@ -1,9 +1,9 @@
 package com.svc.myproject.web.controllers;
 
+import com.svc.myproject.domain.models.services.CategoryServiceModel;
 import com.svc.myproject.domain.models.services.ProductServiceModel;
 import com.svc.myproject.domain.models.services.ProductServiceModelView;
 import com.svc.myproject.domain.models.services.ProductServiceUpdateModel;
-import com.svc.myproject.repository.ProductRepository;
 import com.svc.myproject.services.ProductService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -39,6 +39,9 @@ public class ProductController {
     }
     @GetMapping("/detail/{id}")
     public ResponseEntity<ProductServiceModelView> getProductByID(@PathVariable String id){
+        if (productService.productById(id) == null){
+           return new  ResponseEntity(HttpStatus.NOT_FOUND);
+        }
         return ResponseEntity.ok(productService.productById(id));
     }
 
@@ -59,5 +62,12 @@ public class ProductController {
         ProductServiceModelView productViewModel =
                 productService.update(updateModel, id);
         return new ResponseEntity<>(productViewModel, HttpStatus.OK);
+    }
+    @GetMapping("/search")
+    public ResponseEntity<List<ProductServiceModelView>> searchProductOfCategory(@RequestBody CategoryServiceModel categoryServiceModel){
+        if (productService.findByTwoCategories(categoryServiceModel) == null){
+            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+        }
+        return ResponseEntity.ok(productService.findByTwoCategories(categoryServiceModel));
     }
 }

@@ -20,11 +20,11 @@ import java.util.Map;
 @RestController
 @RequestMapping("/cloudinary")
 @CrossOrigin(origins = "http://localhost:4200")
-public class MainController {
+public class CloudinaryController {
     private final CloudinaryService cloudinaryService;
     private final ImageService imageService;
 
-    public MainController(CloudinaryService cloudinaryService, ImageService imageService) {
+    public CloudinaryController(CloudinaryService cloudinaryService, ImageService imageService) {
         this.cloudinaryService = cloudinaryService;
         this.imageService = imageService;
     }
