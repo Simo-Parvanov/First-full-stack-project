@@ -1,0 +1,785 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="912237e0-145c-47d9-9a08-f9b11b35a32d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../back-and-spring/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back-and-spring/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back-and-spring/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back-and-spring/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back-and-spring/.idea/dataSources/57a4c848-045c-4400-924a-6a7942d946b8.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/57a4c848-045c-4400-924a-6a7942d946b8.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back-and-spring/.idea/dataSources/57a4c848-045c-4400-924a-6a7942d946b8/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/57a4c848-045c-4400-924a-6a7942d946b8/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back-and-spring/.idea/dataSources/57a4c848-045c-4400-924a-6a7942d946b8/storage_v2/_src_/schema/project_db.ZKOUig.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/57a4c848-045c-4400-924a-6a7942d946b8/storage_v2/_src_/schema/project_db.ZKOUig.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back-and-spring/.idea/dataSources/b6e39398-1315-4dca-8a39-b0b76d2f94d2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back-and-spring/.idea/dataSources/b6e39398-1315-4dca-8a39-b0b76d2f94d2/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back-and-spring/.idea/dataSources/b6e39398-1315-4dca-8a39-b0b76d2f94d2/storage_v2/_src_/schema/project_db.ZKOUig.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back-and-spring/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back-and-spring/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back-and-spring/.idea/libraries/Maven__antlr_antlr_2_7_7.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__antlr_antlr_2_7_7.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back-and-spring/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_2_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_2_3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back-and-spring/.idea/libraries/Maven__ch_qos_logback_logback_core_1_2_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_core_1_2_3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back-and-spring/.idea/libraries/Maven__com_cloudinary_cloudinary_core_1_26_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_cloudinary_cloudinary_core_1_26_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back-and-spring/.idea/libraries/Maven__com_cloudinary_cloudinary_http44_1_26_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_cloudinary_cloudinary_http44_1_26_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back-and-spring/.idea/libraries/Maven__com_fasterxml_classmate_1_5_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_classmate_1_5_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back-and-spring/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_11_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_11_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back-and-spring/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_11_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_11_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back-and-spring/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_11_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_11_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back-and-spring/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jdk8_2_11_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jdk8_2_11_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back-and-spring/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jsr310_2_11_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jsr310_2_11_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back-and-spring/.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_parameter_names_2_11_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_parameter_names_2_11_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back-and-spring/.idea/libraries/Maven__com_jayway_jsonpath_json_path_2_4_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_jayway_jsonpath_json_path_2_4_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back-and-spring/.idea/libraries/Maven__com_sun_activation_jakarta_activation_1_2_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_activation_jakarta_activation_1_2_2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back-and-spring/.idea/libraries/Maven__com_sun_istack_istack_commons_runtime_3_0_11.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_istack_istack_commons_runtime_3_0_11.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back-and-spring/.idea/libraries/Maven__com_vaadin_external_google_android_json_0_0_20131108_vaadin1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_vaadin_external_google_android_json_0_0_20131108_vaadin1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back-and-spring/.idea/libraries/Maven__com_zaxxer_HikariCP_3_4_5.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_zaxxer_HikariCP_3_4_5.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back-and-spring/.idea/libraries/Maven__commons_codec_commons_codec_1_14.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_14.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back-and-spring/.idea/libraries/Maven__io_jsonwebtoken_jjwt_0_9_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_jsonwebtoken_jjwt_0_9_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back-and-spring/.idea/libraries/Maven__io_projectreactor_reactor_core_3_3_6_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_projectreactor_reactor_core_3_3_6_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back-and-spring/.idea/libraries/Maven__jakarta_activation_jakarta_activation_api_1_2_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_activation_jakarta_activation_api_1_2_2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back-and-spring/.idea/libraries/Maven__jakarta_annotation_jakarta_annotation_api_1_3_5.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_annotation_jakarta_annotation_api_1_3_5.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back-and-spring/.idea/libraries/Maven__jakarta_persistence_jakarta_persistence_api_2_2_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_persistence_jakarta_persistence_api_2_2_3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back-and-spring/.idea/libraries/Maven__jakarta_transaction_jakarta_transaction_api_1_3_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_transaction_jakarta_transaction_api_1_3_3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back-and-spring/.idea/libraries/Maven__jakarta_xml_bind_jakarta_xml_bind_api_2_3_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_xml_bind_jakarta_xml_bind_api_2_3_3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back-and-spring/.idea/libraries/Maven__javax_validation_validation_api_2_0_1_Final.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_validation_validation_api_2_0_1_Final.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back-and-spring/.idea/libraries/Maven__junit_junit_4_13.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_13.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back-and-spring/.idea/libraries/Maven__mysql_mysql_connector_java_8_0_20.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_8_0_20.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back-and-spring/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_10_11.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_10_11.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back-and-spring/.idea/libraries/Maven__net_bytebuddy_byte_buddy_agent_1_10_11.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_agent_1_10_11.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back-and-spring/.idea/libraries/Maven__net_minidev_accessors_smart_1_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_accessors_smart_1_2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back-and-spring/.idea/libraries/Maven__net_minidev_json_smart_2_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_json_smart_2_3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back-and-spring/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_10.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_10.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back-and-spring/.idea/libraries/Maven__org_apache_httpcomponents_httpclient_4_5_12.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpclient_4_5_12.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back-and-spring/.idea/libraries/Maven__org_apache_httpcomponents_httpcore_4_4_13.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpcore_4_4_13.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back-and-spring/.idea/libraries/Maven__org_apache_httpcomponents_httpmime_4_5_12.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpmime_4_5_12.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back-and-spring/.idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_13_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_13_3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back-and-spring/.idea/libraries/Maven__org_apache_logging_log4j_log4j_to_slf4j_2_13_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_to_slf4j_2_13_3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back-and-spring/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_core_9_0_36.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_core_9_0_36.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back-and-spring/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_websocket_9_0_36.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_websocket_9_0_36.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back-and-spring/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_1_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_1_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back-and-spring/.idea/libraries/Maven__org_aspectj_aspectjweaver_1_9_5.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_aspectj_aspectjweaver_1_9_5.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back-and-spring/.idea/libraries/Maven__org_assertj_assertj_core_3_16_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_assertj_assertj_core_3_16_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back-and-spring/.idea/libraries/Maven__org_dom4j_dom4j_2_1_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_dom4j_dom4j_2_1_3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back-and-spring/.idea/libraries/Maven__org_glassfish_jakarta_el_3_0_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jakarta_el_3_0_3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back-and-spring/.idea/libraries/Maven__org_glassfish_jaxb_jaxb_runtime_2_3_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jaxb_jaxb_runtime_2_3_3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back-and-spring/.idea/libraries/Maven__org_glassfish_jaxb_txw2_2_3_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jaxb_txw2_2_3_3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back-and-spring/.idea/libraries/Maven__org_hamcrest_hamcrest_2_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_2_2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back-and-spring/.idea/libraries/Maven__org_hibernate_common_hibernate_commons_annotations_5_1_0_Final.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_common_hibernate_commons_annotations_5_1_0_Final.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back-and-spring/.idea/libraries/Maven__org_hibernate_hibernate_core_5_4_17_Final.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_core_5_4_17_Final.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back-and-spring/.idea/libraries/Maven__org_hibernate_validator_hibernate_validator_6_0_19_Final.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_validator_hibernate_validator_6_0_19_Final.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back-and-spring/.idea/libraries/Maven__org_hsqldb_hsqldb_2_4_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hsqldb_hsqldb_2_4_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back-and-spring/.idea/libraries/Maven__org_javassist_javassist_3_24_0_GA.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_javassist_javassist_3_24_0_GA.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back-and-spring/.idea/libraries/Maven__org_jboss_jandex_2_1_3_Final.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_jandex_2_1_3_Final.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back-and-spring/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_4_1_Final.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_4_1_Final.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back-and-spring/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_5_6_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_5_6_2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back-and-spring/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_6_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_6_2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back-and-spring/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_6_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_6_2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back-and-spring/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_params_5_6_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_params_5_6_2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back-and-spring/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_6_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_6_2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back-and-spring/.idea/libraries/Maven__org_junit_platform_junit_platform_engine_1_6_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_engine_1_6_2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back-and-spring/.idea/libraries/Maven__org_junit_vintage_junit_vintage_engine_5_6_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_vintage_junit_vintage_engine_5_6_2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back-and-spring/.idea/libraries/Maven__org_mockito_mockito_core_3_3_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_core_3_3_3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back-and-spring/.idea/libraries/Maven__org_mockito_mockito_junit_jupiter_3_3_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_junit_jupiter_3_3_3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back-and-spring/.idea/libraries/Maven__org_modelmapper_modelmapper_2_3_5.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_modelmapper_modelmapper_2_3_5.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back-and-spring/.idea/libraries/Maven__org_objenesis_objenesis_2_6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_objenesis_objenesis_2_6.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back-and-spring/.idea/libraries/Maven__org_opentest4j_opentest4j_1_2_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_opentest4j_opentest4j_1_2_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back-and-spring/.idea/libraries/Maven__org_ow2_asm_asm_5_0_4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_5_0_4.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back-and-spring/.idea/libraries/Maven__org_reactivestreams_reactive_streams_1_0_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_reactivestreams_reactive_streams_1_0_3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back-and-spring/.idea/libraries/Maven__org_skyscreamer_jsonassert_1_5_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_skyscreamer_jsonassert_1_5_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back-and-spring/.idea/libraries/Maven__org_slf4j_jul_to_slf4j_1_7_30.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jul_to_slf4j_1_7_30.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back-and-spring/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_30.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_30.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back-and-spring/.idea/libraries/Maven__org_springframework_boot_spring_boot_2_3_1_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_2_3_1_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back-and-spring/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_2_3_1_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_2_3_1_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back-and-spring/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_2_3_1_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_2_3_1_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back-and-spring/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_aop_2_3_1_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_aop_2_3_1_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back-and-spring/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_data_jpa_2_3_1_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_data_jpa_2_3_1_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back-and-spring/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_jdbc_2_3_1_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_jdbc_2_3_1_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back-and-spring/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_json_2_3_1_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_json_2_3_1_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back-and-spring/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_2_3_1_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_2_3_1_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back-and-spring/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_security_2_3_1_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_security_2_3_1_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back-and-spring/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_test_2_3_1_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_test_2_3_1_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back-and-spring/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_tomcat_2_3_1_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_tomcat_2_3_1_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back-and-spring/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_2_3_1_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_2_3_1_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back-and-spring/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_2_3_1_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_2_3_1_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back-and-spring/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_autoconfigure_2_3_1_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_autoconfigure_2_3_1_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back-and-spring/.idea/libraries/Maven__org_springframework_data_spring_data_commons_2_3_1_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_commons_2_3_1_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back-and-spring/.idea/libraries/Maven__org_springframework_data_spring_data_jpa_2_3_1_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_jpa_2_3_1_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back-and-spring/.idea/libraries/Maven__org_springframework_security_spring_security_config_5_3_3_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_config_5_3_3_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back-and-spring/.idea/libraries/Maven__org_springframework_security_spring_security_core_5_3_3_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_core_5_3_3_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back-and-spring/.idea/libraries/Maven__org_springframework_security_spring_security_test_5_3_3_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_test_5_3_3_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back-and-spring/.idea/libraries/Maven__org_springframework_security_spring_security_web_5_3_3_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_web_5_3_3_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back-and-spring/.idea/libraries/Maven__org_springframework_spring_aop_5_2_7_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_5_2_7_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back-and-spring/.idea/libraries/Maven__org_springframework_spring_aspects_5_2_7_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aspects_5_2_7_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back-and-spring/.idea/libraries/Maven__org_springframework_spring_beans_5_2_7_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_5_2_7_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back-and-spring/.idea/libraries/Maven__org_springframework_spring_context_5_2_7_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_5_2_7_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back-and-spring/.idea/libraries/Maven__org_springframework_spring_core_5_2_7_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_5_2_7_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back-and-spring/.idea/libraries/Maven__org_springframework_spring_expression_5_2_7_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_5_2_7_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back-and-spring/.idea/libraries/Maven__org_springframework_spring_jcl_5_2_7_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jcl_5_2_7_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back-and-spring/.idea/libraries/Maven__org_springframework_spring_jdbc_5_2_7_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_5_2_7_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back-and-spring/.idea/libraries/Maven__org_springframework_spring_orm_5_2_7_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_orm_5_2_7_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back-and-spring/.idea/libraries/Maven__org_springframework_spring_test_5_2_7_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_5_2_7_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back-and-spring/.idea/libraries/Maven__org_springframework_spring_tx_5_2_7_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_5_2_7_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back-and-spring/.idea/libraries/Maven__org_springframework_spring_web_5_2_7_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_5_2_7_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back-and-spring/.idea/libraries/Maven__org_springframework_spring_webflux_5_2_6_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webflux_5_2_6_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back-and-spring/.idea/libraries/Maven__org_springframework_spring_webmvc_5_2_7_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_5_2_7_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back-and-spring/.idea/libraries/Maven__org_xmlunit_xmlunit_core_2_7_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_xmlunit_xmlunit_core_2_7_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back-and-spring/.idea/libraries/Maven__org_yaml_snakeyaml_1_26.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_yaml_snakeyaml_1_26.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back-and-spring/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back-and-spring/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back-and-spring/.idea/uiDesigner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back-and-spring/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back-and-spring/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back-and-spring/.mvn/wrapper/MavenWrapperDownloader.java" beforeDir="false" afterPath="$PROJECT_DIR$/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back-and-spring/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back-and-spring/back-and.iml" beforeDir="false" afterPath="$PROJECT_DIR$/back-end.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back-and-spring/local/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/local/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back-and-spring/mvnw" beforeDir="false" afterPath="$PROJECT_DIR$/mvnw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back-and-spring/mvnw.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/mvnw.cmd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back-and-spring/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back-and-spring/src/main/java/com/svc/myproject/RestApplicationInit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/svc/myproject/RestApplicationInit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back-and-spring/src/main/java/com/svc/myproject/SpringBootSecurityJwtApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/svc/myproject/SpringBootSecurityJwtApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back-and-spring/src/main/java/com/svc/myproject/config/AppConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/svc/myproject/config/AppConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back-and-spring/src/main/java/com/svc/myproject/config/WebConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/svc/myproject/config/WebConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back-and-spring/src/main/java/com/svc/myproject/domain/entities/BaseEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/svc/myproject/domain/entities/BaseEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back-and-spring/src/main/java/com/svc/myproject/domain/entities/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/svc/myproject/domain/entities/Category.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back-and-spring/src/main/java/com/svc/myproject/domain/entities/CategoryEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/svc/myproject/domain/entities/CategoryEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back-and-spring/src/main/java/com/svc/myproject/domain/entities/CategoryEnumTwo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/svc/myproject/domain/entities/CategoryEnumTwo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back-and-spring/src/main/java/com/svc/myproject/domain/entities/ERole.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/svc/myproject/domain/entities/ERole.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back-and-spring/src/main/java/com/svc/myproject/domain/entities/Image.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/svc/myproject/domain/entities/Image.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back-and-spring/src/main/java/com/svc/myproject/domain/entities/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/svc/myproject/domain/entities/Order.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back-and-spring/src/main/java/com/svc/myproject/domain/entities/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/svc/myproject/domain/entities/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back-and-spring/src/main/java/com/svc/myproject/domain/entities/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/svc/myproject/domain/entities/Role.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back-and-spring/src/main/java/com/svc/myproject/domain/entities/SubcategoryTwo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/svc/myproject/domain/entities/SubcategoryTwo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back-and-spring/src/main/java/com/svc/myproject/domain/entities/Ticket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/svc/myproject/domain/entities/Ticket.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back-and-spring/src/main/java/com/svc/myproject/domain/entities/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/svc/myproject/domain/entities/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back-and-spring/src/main/java/com/svc/myproject/domain/models/services/CartServiceModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/svc/myproject/domain/models/services/CartServiceModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back-and-spring/src/main/java/com/svc/myproject/domain/models/services/CategoryServiceModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/svc/myproject/domain/models/services/CategoryServiceModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back-and-spring/src/main/java/com/svc/myproject/domain/models/services/ProductServiceModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/svc/myproject/domain/models/services/ProductServiceModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back-and-spring/src/main/java/com/svc/myproject/domain/models/services/ProductServiceModelView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/svc/myproject/domain/models/services/ProductServiceModelView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back-and-spring/src/main/java/com/svc/myproject/domain/models/services/ProductServiceUpdateModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/svc/myproject/domain/models/services/ProductServiceUpdateModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back-and-spring/src/main/java/com/svc/myproject/domain/models/services/StatServiceModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/svc/myproject/domain/models/services/StatServiceModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back-and-spring/src/main/java/com/svc/myproject/domain/models/services/TicketServiceModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/svc/myproject/domain/models/services/TicketServiceModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back-and-spring/src/main/java/com/svc/myproject/domain/models/services/UpdateRoleServiceModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/svc/myproject/domain/models/services/UpdateRoleServiceModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back-and-spring/src/main/java/com/svc/myproject/domain/models/services/UserServiceModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/svc/myproject/domain/models/services/UserServiceModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back-and-spring/src/main/java/com/svc/myproject/payload/request/LoginRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/svc/myproject/payload/request/LoginRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back-and-spring/src/main/java/com/svc/myproject/payload/request/SignupRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/svc/myproject/payload/request/SignupRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back-and-spring/src/main/java/com/svc/myproject/payload/response/JwtResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/svc/myproject/payload/response/JwtResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back-and-spring/src/main/java/com/svc/myproject/payload/response/MessageResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/svc/myproject/payload/response/MessageResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back-and-spring/src/main/java/com/svc/myproject/repository/ImageRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/svc/myproject/repository/ImageRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back-and-spring/src/main/java/com/svc/myproject/repository/ProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/svc/myproject/repository/ProductRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back-and-spring/src/main/java/com/svc/myproject/repository/RoleRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/svc/myproject/repository/RoleRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back-and-spring/src/main/java/com/svc/myproject/repository/TicketRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/svc/myproject/repository/TicketRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back-and-spring/src/main/java/com/svc/myproject/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/svc/myproject/repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back-and-spring/src/main/java/com/svc/myproject/security/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/svc/myproject/security/WebSecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back-and-spring/src/main/java/com/svc/myproject/security/jwt/AuthEntryPointJwt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/svc/myproject/security/jwt/AuthEntryPointJwt.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back-and-spring/src/main/java/com/svc/myproject/security/jwt/AuthTokenFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/svc/myproject/security/jwt/AuthTokenFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back-and-spring/src/main/java/com/svc/myproject/security/jwt/JwtUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/svc/myproject/security/jwt/JwtUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back-and-spring/src/main/java/com/svc/myproject/security/services/UserDetailsImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/svc/myproject/security/services/UserDetailsImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back-and-spring/src/main/java/com/svc/myproject/security/services/UserDetailsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/svc/myproject/security/services/UserDetailsServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back-and-spring/src/main/java/com/svc/myproject/services/CloudinaryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/svc/myproject/services/CloudinaryService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back-and-spring/src/main/java/com/svc/myproject/services/ImageService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/svc/myproject/services/ImageService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back-and-spring/src/main/java/com/svc/myproject/services/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/svc/myproject/services/ProductService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back-and-spring/src/main/java/com/svc/myproject/services/RoleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/svc/myproject/services/RoleService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back-and-spring/src/main/java/com/svc/myproject/services/TicketService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/svc/myproject/services/TicketService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back-and-spring/src/main/java/com/svc/myproject/services/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/svc/myproject/services/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back-and-spring/src/main/java/com/svc/myproject/services/impl/CloudinaryServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/svc/myproject/services/impl/CloudinaryServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back-and-spring/src/main/java/com/svc/myproject/services/impl/ImageServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/svc/myproject/services/impl/ImageServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back-and-spring/src/main/java/com/svc/myproject/services/impl/ProductServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/svc/myproject/services/impl/ProductServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back-and-spring/src/main/java/com/svc/myproject/services/impl/RoleServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/svc/myproject/services/impl/RoleServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back-and-spring/src/main/java/com/svc/myproject/services/impl/TicketServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/svc/myproject/services/impl/TicketServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back-and-spring/src/main/java/com/svc/myproject/services/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/svc/myproject/services/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back-and-spring/src/main/java/com/svc/myproject/stat/StatService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/svc/myproject/stat/StatService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back-and-spring/src/main/java/com/svc/myproject/stat/Statistic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/svc/myproject/stat/Statistic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back-and-spring/src/main/java/com/svc/myproject/web/controllers/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/svc/myproject/web/controllers/AdminController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back-and-spring/src/main/java/com/svc/myproject/web/controllers/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/svc/myproject/web/controllers/AuthController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back-and-spring/src/main/java/com/svc/myproject/web/controllers/CartController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/svc/myproject/web/controllers/CartController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back-and-spring/src/main/java/com/svc/myproject/web/controllers/CloudinaryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/svc/myproject/web/controllers/CloudinaryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back-and-spring/src/main/java/com/svc/myproject/web/controllers/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/svc/myproject/web/controllers/ProductController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back-and-spring/src/main/java/com/svc/myproject/web/controllers/StatController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/svc/myproject/web/controllers/StatController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back-and-spring/src/main/java/com/svc/myproject/web/controllers/TicketController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/svc/myproject/web/controllers/TicketController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back-and-spring/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back-and-spring/src/test/java/com/svc/myproject/SpringBootSecurityJwtApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/svc/myproject/SpringBootSecurityJwtApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back-and-spring/src/test/java/com/svc/myproject/web/AuthControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/svc/myproject/web/AuthControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back-and-spring/src/test/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back-and-spring/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back-and-spring/target/test-classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/.browserslistrc" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/.browserslistrc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/.idea/my-app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/.idea/my-app.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/angular.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/e2e/protractor.conf.js" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/e2e/protractor.conf.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/e2e/src/app.e2e-spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/e2e/src/app.e2e-spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/e2e/src/app.po.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/e2e/src/app.po.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/e2e/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/e2e/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/karma.conf.js" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/karma.conf.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/src/app/app-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/src/app/app.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/src/app/app.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/src/app/app.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/src/app/app.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/src/app/app.component.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/src/app/app.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/src/app/components/administration/administration.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/src/app/components/administration/administration.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/src/app/components/administration/administration.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/src/app/components/administration/administration.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/src/app/components/administration/administration.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/src/app/components/administration/administration.component.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/src/app/components/administration/administration.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/src/app/components/administration/administration.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/src/app/components/administration/statistic/statistic.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/src/app/components/administration/statistic/statistic.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/src/app/components/administration/statistic/statistic.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/src/app/components/administration/statistic/statistic.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/src/app/components/administration/statistic/statistic.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/src/app/components/administration/statistic/statistic.component.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/src/app/components/administration/statistic/statistic.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/src/app/components/administration/statistic/statistic.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/src/app/components/login/login.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/src/app/components/login/login.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/src/app/components/login/login.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/src/app/components/login/login.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/src/app/components/login/login.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/src/app/components/login/login.component.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/src/app/components/login/login.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/src/app/components/login/login.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/src/app/components/models/cart-item.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/src/app/components/models/cart-item.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/src/app/components/models/image.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/src/app/components/models/image.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/src/app/components/models/product-model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/src/app/components/models/product-model.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/src/app/components/models/users.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/src/app/components/models/users.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/src/app/components/models/utils.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/src/app/components/models/utils.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/src/app/components/product-detail/product-detail.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/src/app/components/product-detail/product-detail.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/src/app/components/product-detail/product-detail.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/src/app/components/product-detail/product-detail.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/src/app/components/product-detail/product-detail.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/src/app/components/product-detail/product-detail.component.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/src/app/components/product-detail/product-detail.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/src/app/components/product-detail/product-detail.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/src/app/components/profile/profile.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/src/app/components/profile/profile.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/src/app/components/profile/profile.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/src/app/components/profile/profile.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/src/app/components/profile/profile.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/src/app/components/profile/profile.component.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/src/app/components/profile/profile.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/src/app/components/profile/profile.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/src/app/components/register/register.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/src/app/components/register/register.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/src/app/components/register/register.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/src/app/components/register/register.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/src/app/components/register/register.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/src/app/components/register/register.component.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/src/app/components/register/register.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/src/app/components/register/register.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/src/app/components/shared/footer/footer.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/src/app/components/shared/footer/footer.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/src/app/components/shared/footer/footer.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/src/app/components/shared/footer/footer.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/src/app/components/shared/footer/footer.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/src/app/components/shared/footer/footer.component.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/src/app/components/shared/footer/footer.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/src/app/components/shared/footer/footer.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/src/app/components/shared/header/header.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/src/app/components/shared/header/header.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/src/app/components/shared/header/header.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/src/app/components/shared/header/header.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/src/app/components/shared/header/header.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/src/app/components/shared/header/header.component.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/src/app/components/shared/header/header.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/src/app/components/shared/header/header.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/src/app/components/shared/nav/nav.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/src/app/components/shared/nav/nav.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/src/app/components/shared/nav/nav.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/src/app/components/shared/nav/nav.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/src/app/components/shared/nav/nav.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/src/app/components/shared/nav/nav.component.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/src/app/components/shared/nav/nav.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/src/app/components/shared/nav/nav.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/src/app/components/shared/page-not-found/page-not-found.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/src/app/components/shared/page-not-found/page-not-found.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/src/app/components/shared/page-not-found/page-not-found.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/src/app/components/shared/page-not-found/page-not-found.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/src/app/components/shared/page-not-found/page-not-found.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/src/app/components/shared/page-not-found/page-not-found.component.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/src/app/components/shared/page-not-found/page-not-found.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/src/app/components/shared/page-not-found/page-not-found.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/src/app/components/shoping-cart/cart/cart-details/cart-details.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/src/app/components/shoping-cart/cart/cart-details/cart-details.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/src/app/components/shoping-cart/cart/cart-details/cart-details.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/src/app/components/shoping-cart/cart/cart-details/cart-details.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/src/app/components/shoping-cart/cart/cart-details/cart-details.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/src/app/components/shoping-cart/cart/cart-details/cart-details.component.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/src/app/components/shoping-cart/cart/cart-details/cart-details.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/src/app/components/shoping-cart/cart/cart-details/cart-details.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/src/app/components/shoping-cart/cart/cart-item/cart-item.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/src/app/components/shoping-cart/cart/cart-item/cart-item.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/src/app/components/shoping-cart/cart/cart-item/cart-item.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/src/app/components/shoping-cart/cart/cart-item/cart-item.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/src/app/components/shoping-cart/cart/cart-item/cart-item.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/src/app/components/shoping-cart/cart/cart-item/cart-item.component.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/src/app/components/shoping-cart/cart/cart-item/cart-item.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/src/app/components/shoping-cart/cart/cart-item/cart-item.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/src/app/components/shoping-cart/cart/cart.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/src/app/components/shoping-cart/cart/cart.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/src/app/components/shoping-cart/cart/cart.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/src/app/components/shoping-cart/cart/cart.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/src/app/components/shoping-cart/cart/cart.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/src/app/components/shoping-cart/cart/cart.component.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/src/app/components/shoping-cart/cart/cart.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/src/app/components/shoping-cart/cart/cart.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/src/app/components/shoping-cart/cart/checkout/checkout.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/src/app/components/shoping-cart/cart/checkout/checkout.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/src/app/components/shoping-cart/cart/checkout/checkout.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/src/app/components/shoping-cart/cart/checkout/checkout.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/src/app/components/shoping-cart/cart/checkout/checkout.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/src/app/components/shoping-cart/cart/checkout/checkout.component.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/src/app/components/shoping-cart/cart/checkout/checkout.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/src/app/components/shoping-cart/cart/checkout/checkout.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/src/app/components/shoping-cart/filters/filters.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/src/app/components/shoping-cart/filters/filters.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/src/app/components/shoping-cart/filters/filters.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/src/app/components/shoping-cart/filters/filters.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/src/app/components/shoping-cart/filters/filters.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/src/app/components/shoping-cart/filters/filters.component.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/src/app/components/shoping-cart/filters/filters.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/src/app/components/shoping-cart/filters/filters.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/src/app/components/shoping-cart/product-list/product-item/product-item.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/src/app/components/shoping-cart/product-list/product-item/product-item.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/src/app/components/shoping-cart/product-list/product-item/product-item.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/src/app/components/shoping-cart/product-list/product-item/product-item.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/src/app/components/shoping-cart/product-list/product-item/product-item.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/src/app/components/shoping-cart/product-list/product-item/product-item.component.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/src/app/components/shoping-cart/product-list/product-item/product-item.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/src/app/components/shoping-cart/product-list/product-item/product-item.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/src/app/components/shoping-cart/product-list/product-list.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/src/app/components/shoping-cart/product-list/product-list.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/src/app/components/shoping-cart/product-list/product-list.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/src/app/components/shoping-cart/product-list/product-list.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/src/app/components/shoping-cart/product-list/product-list.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/src/app/components/shoping-cart/product-list/product-list.component.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/src/app/components/shoping-cart/product-list/product-list.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/src/app/components/shoping-cart/product-list/product-list.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/src/app/components/shoping-cart/shopping-cart.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/src/app/components/shoping-cart/shopping-cart.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/src/app/components/shoping-cart/shopping-cart.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/src/app/components/shoping-cart/shopping-cart.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/src/app/components/shoping-cart/shopping-cart.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/src/app/components/shoping-cart/shopping-cart.component.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/src/app/components/shoping-cart/shopping-cart.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/src/app/components/shoping-cart/shopping-cart.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/src/app/helpers/auth.interceptor.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/src/app/helpers/auth.interceptor.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/src/app/image/list-image/list-image.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/src/app/image/list-image/list-image.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/src/app/image/list-image/list-image.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/src/app/image/list-image/list-image.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/src/app/image/list-image/list-image.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/src/app/image/list-image/list-image.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/src/app/image/upload-image/upload-image.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/src/app/image/upload-image/upload-image.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/src/app/image/upload-image/upload-image.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/src/app/image/upload-image/upload-image.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/src/app/image/upload-image/upload-image.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/src/app/image/upload-image/upload-image.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/src/app/services/auth.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/src/app/services/auth.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/src/app/services/cart.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/src/app/services/cart.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/src/app/services/image.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/src/app/services/image.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/src/app/services/messenger.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/src/app/services/messenger.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/src/app/services/product.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/src/app/services/product.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/src/app/services/token-storage.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/src/app/services/token-storage.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/src/app/services/user.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/src/app/services/user.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/src/assets/.gitkeep" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/src/assets/.gitkeep" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/src/assets/img/arrow.png" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/src/assets/img/arrow.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/src/assets/img/img.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/src/assets/img/img.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/src/assets/img/img2.png" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/src/assets/img/img2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/src/environments/environment.prod.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/src/environments/environment.prod.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/src/environments/environment.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/src/environments/environment.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/src/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/src/favicon.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/src/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/src/main.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/src/polyfills.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/src/polyfills.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/src/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/src/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/src/test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/src/test.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/themes/amelia/bootstrap.css" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/themes/amelia/bootstrap.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/themes/amelia/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/themes/amelia/bootstrap.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/themes/bootshop/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/themes/bootshop/bootstrap.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/themes/businessltd/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/themes/businessltd/bootstrap.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/themes/cerulean/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/themes/cerulean/bootstrap.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/themes/css/base.css" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/themes/css/base.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/themes/css/bootstrap-responsive.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/themes/css/bootstrap-responsive.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/themes/css/font-awesome-ie7.css" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/themes/css/font-awesome-ie7.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/themes/css/font-awesome.css" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/themes/css/font-awesome.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/themes/cyborg/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/themes/cyborg/bootstrap.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/themes/font/fontawesome-webfont.eot" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/themes/font/fontawesome-webfont.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/themes/font/fontawesome-webfont.svg" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/themes/font/fontawesome-webfont.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/themes/font/fontawesome-webfont.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/themes/font/fontawesome-webfont.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/themes/font/fontawesome-webfont.woff" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/themes/font/fontawesome-webfont.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/themes/font/museo_slab_300-webfont.eot" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/themes/font/museo_slab_300-webfont.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/themes/font/museo_slab_300-webfont.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/themes/font/museo_slab_300-webfont.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/themes/font/museo_slab_500-webfont.eot" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/themes/font/museo_slab_500-webfont.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/themes/font/museo_slab_500-webfont.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/themes/font/museo_slab_500-webfont.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/themes/font/proximanova-webfont.eot" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/themes/font/proximanova-webfont.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/themes/font/proximanova-webfont.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/themes/font/proximanova-webfont.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/themes/images/carousel/1.png" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/themes/images/carousel/1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/themes/images/carousel/2.png" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/themes/images/carousel/2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/themes/images/carousel/3.png" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/themes/images/carousel/3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/themes/images/carousel/4.png" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/themes/images/carousel/4.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/themes/images/carousel/5.png" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/themes/images/carousel/5.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/themes/images/carousel/6.png" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/themes/images/carousel/6.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/themes/images/carousel/7.png" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/themes/images/carousel/7.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/themes/images/facebook.png" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/themes/images/facebook.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/themes/images/headerRepeat.png" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/themes/images/headerRepeat.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/themes/images/ico-cart.png" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/themes/images/ico-cart.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/themes/images/ico/apple-touch-icon-114-precomposed.png" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/themes/images/ico/apple-touch-icon-114-precomposed.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/themes/images/ico/apple-touch-icon-144-precomposed.png" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/themes/images/ico/apple-touch-icon-144-precomposed.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/themes/images/ico/apple-touch-icon-57-precomposed.png" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/themes/images/ico/apple-touch-icon-57-precomposed.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/themes/images/ico/apple-touch-icon-72-precomposed.png" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/themes/images/ico/apple-touch-icon-72-precomposed.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/themes/images/ico/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/themes/images/ico/favicon.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/themes/images/lightbox/Close.png" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/themes/images/lightbox/Close.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/themes/images/lightbox/lightbox-blank.gif" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/themes/images/lightbox/lightbox-blank.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/themes/images/lightbox/lightbox-btn-close.gif" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/themes/images/lightbox/lightbox-btn-close.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/themes/images/lightbox/lightbox-btn-next.gif" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/themes/images/lightbox/lightbox-btn-next.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/themes/images/lightbox/lightbox-btn-prev.gif" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/themes/images/lightbox/lightbox-btn-prev.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/themes/images/lightbox/lightbox-ico-loading.gif" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/themes/images/lightbox/lightbox-ico-loading.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/themes/images/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/themes/images/logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/themes/images/new.png" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/themes/images/new.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/themes/images/payment_methods.png" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/themes/images/payment_methods.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/themes/images/products/1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/themes/images/products/1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/themes/images/products/10.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/themes/images/products/10.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/themes/images/products/11.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/themes/images/products/11.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/themes/images/products/12.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/themes/images/products/12.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/themes/images/products/13.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/themes/images/products/13.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/themes/images/products/2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/themes/images/products/2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/themes/images/products/3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/themes/images/products/3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/themes/images/products/4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/themes/images/products/4.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/themes/images/products/5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/themes/images/products/5.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/themes/images/products/6.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/themes/images/products/6.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/themes/images/products/7.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/themes/images/products/7.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/themes/images/products/8.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/themes/images/products/8.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/themes/images/products/9.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/themes/images/products/9.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/themes/images/products/b1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/themes/images/products/b1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/themes/images/products/b2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/themes/images/products/b2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/themes/images/products/b3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/themes/images/products/b3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/themes/images/products/b4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/themes/images/products/b4.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/themes/images/products/kindle.png" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/themes/images/products/kindle.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/themes/images/products/large/3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/themes/images/products/large/3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/themes/images/products/large/f1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/themes/images/products/large/f1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/themes/images/products/large/f2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/themes/images/products/large/f2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/themes/images/products/large/f3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/themes/images/products/large/f3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/themes/images/products/panasonic.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/themes/images/products/panasonic.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/themes/images/search.png" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/themes/images/search.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/themes/images/tabRepeatInactive.png" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/themes/images/tabRepeatInactive.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/themes/images/twitter.png" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/themes/images/twitter.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/themes/images/youtube.png" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/themes/images/youtube.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/themes/img/glyphicons-halflings-white.png" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/themes/img/glyphicons-halflings-white.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/themes/img/glyphicons-halflings.png" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/themes/img/glyphicons-halflings.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/themes/journal/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/themes/journal/bootstrap.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/themes/js/bootshop.js" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/themes/js/bootshop.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/themes/js/bootstrap.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/themes/js/bootstrap.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/themes/js/google-code-prettify/prettify.css" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/themes/js/google-code-prettify/prettify.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/themes/js/google-code-prettify/prettify.js" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/themes/js/google-code-prettify/prettify.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/themes/js/jquery.js" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/themes/js/jquery.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/themes/js/jquery.lightbox-0.5.js" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/themes/js/jquery.lightbox-0.5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/themes/js/less.js" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/themes/js/less.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/themes/less/accordion.less" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/themes/less/accordion.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/themes/less/alerts.less" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/themes/less/alerts.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/themes/less/amelia.less" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/themes/less/amelia.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/themes/less/amelia/bootswatch.less" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/themes/less/amelia/bootswatch.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/themes/less/amelia/variables.less" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/themes/less/amelia/variables.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/themes/less/bootshop.less" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/themes/less/bootshop.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/themes/less/bootshop/main.less" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/themes/less/bootshop/main.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/themes/less/bootshop/variables.less" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/themes/less/bootshop/variables.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/themes/less/bootstrap.less" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/themes/less/bootstrap.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/themes/less/breadcrumbs.less" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/themes/less/breadcrumbs.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/themes/less/button-groups.less" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/themes/less/button-groups.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/themes/less/buttons.less" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/themes/less/buttons.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/themes/less/carousel.less" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/themes/less/carousel.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/themes/less/classified.less" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/themes/less/classified.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/themes/less/close.less" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/themes/less/close.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/themes/less/code.less" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/themes/less/code.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/themes/less/component-animations.less" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/themes/less/component-animations.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/themes/less/dropdowns.less" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/themes/less/dropdowns.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/themes/less/font-awesome-ie7.less" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/themes/less/font-awesome-ie7.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/themes/less/font-awesome.less" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/themes/less/font-awesome.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/themes/less/forms.less" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/themes/less/forms.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/themes/less/grid.less" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/themes/less/grid.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/themes/less/hero-unit.less" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/themes/less/hero-unit.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/themes/less/labels-badges.less" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/themes/less/labels-badges.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/themes/less/layouts.less" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/themes/less/layouts.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/themes/less/mixins.less" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/themes/less/mixins.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/themes/less/modals.less" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/themes/less/modals.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/themes/less/navbar.less" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/themes/less/navbar.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/themes/less/navs.less" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/themes/less/navs.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/themes/less/pager.less" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/themes/less/pager.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/themes/less/pagination.less" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/themes/less/pagination.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/themes/less/popovers.less" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/themes/less/popovers.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/themes/less/progress-bars.less" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/themes/less/progress-bars.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/themes/less/reset.less" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/themes/less/reset.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/themes/less/responsive-1200px-min.less" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/themes/less/responsive-1200px-min.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/themes/less/responsive-767px-max.less" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/themes/less/responsive-767px-max.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/themes/less/responsive-768px-979px.less" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/themes/less/responsive-768px-979px.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/themes/less/responsive-navbar.less" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/themes/less/responsive-navbar.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/themes/less/responsive-utilities.less" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/themes/less/responsive-utilities.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/themes/less/responsive.less" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/themes/less/responsive.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/themes/less/scaffolding.less" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/themes/less/scaffolding.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/themes/less/simplex.less" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/themes/less/simplex.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/themes/less/simplex/bootswatch.less" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/themes/less/simplex/bootswatch.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/themes/less/simplex/variables.less" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/themes/less/simplex/variables.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/themes/less/sprites.less" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/themes/less/sprites.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/themes/less/tables.less" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/themes/less/tables.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/themes/less/thumbnails.less" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/themes/less/thumbnails.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/themes/less/tooltip.less" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/themes/less/tooltip.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/themes/less/type.less" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/themes/less/type.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/themes/less/utilities.less" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/themes/less/utilities.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/themes/less/variables.less" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/themes/less/variables.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/themes/less/wells.less" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/themes/less/wells.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/themes/readable/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/themes/readable/bootstrap.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/themes/simplex/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/themes/simplex/bootstrap.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/themes/slate/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/themes/slate/bootstrap.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/themes/spacelab/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/themes/spacelab/bootstrap.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/themes/spruce/bootstrap.css" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/themes/spruce/bootstrap.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/themes/spruce/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/themes/spruce/bootstrap.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/themes/superhero/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/themes/superhero/bootstrap.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/themes/switch/images/clr/amelia.png" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/themes/switch/images/clr/amelia.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/themes/switch/images/clr/bootshop.png" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/themes/switch/images/clr/bootshop.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/themes/switch/images/clr/businessltd.png" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/themes/switch/images/clr/businessltd.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/themes/switch/images/clr/cerulean.png" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/themes/switch/images/clr/cerulean.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/themes/switch/images/clr/cyborg.png" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/themes/switch/images/clr/cyborg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/themes/switch/images/clr/journal.png" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/themes/switch/images/clr/journal.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/themes/switch/images/clr/readable.png" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/themes/switch/images/clr/readable.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/themes/switch/images/clr/simplex.png" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/themes/switch/images/clr/simplex.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/themes/switch/images/clr/slate.png" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/themes/switch/images/clr/slate.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/themes/switch/images/clr/spacelab.png" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/themes/switch/images/clr/spacelab.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/themes/switch/images/clr/spruce.png" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/themes/switch/images/clr/spruce.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/themes/switch/images/clr/superhero.png" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/themes/switch/images/clr/superhero.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/themes/switch/images/clr/united.png" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/themes/switch/images/clr/united.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/themes/switch/images/hideme.png" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/themes/switch/images/hideme.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/themes/switch/images/pattern/pattern1.png" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/themes/switch/images/pattern/pattern1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/themes/switch/images/pattern/pattern10.png" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/themes/switch/images/pattern/pattern10.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/themes/switch/images/pattern/pattern11.png" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/themes/switch/images/pattern/pattern11.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/themes/switch/images/pattern/pattern12.png" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/themes/switch/images/pattern/pattern12.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/themes/switch/images/pattern/pattern13.png" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/themes/switch/images/pattern/pattern13.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/themes/switch/images/pattern/pattern14.png" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/themes/switch/images/pattern/pattern14.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/themes/switch/images/pattern/pattern15.png" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/themes/switch/images/pattern/pattern15.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/themes/switch/images/pattern/pattern16.png" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/themes/switch/images/pattern/pattern16.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/themes/switch/images/pattern/pattern16~.png" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/themes/switch/images/pattern/pattern16~.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/themes/switch/images/pattern/pattern17.png" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/themes/switch/images/pattern/pattern17.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/themes/switch/images/pattern/pattern17~.png" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/themes/switch/images/pattern/pattern17~.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/themes/switch/images/pattern/pattern18.png" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/themes/switch/images/pattern/pattern18.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/themes/switch/images/pattern/pattern19.png" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/themes/switch/images/pattern/pattern19.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/themes/switch/images/pattern/pattern19~.png" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/themes/switch/images/pattern/pattern19~.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/themes/switch/images/pattern/pattern2.png" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/themes/switch/images/pattern/pattern2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/themes/switch/images/pattern/pattern20.png" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/themes/switch/images/pattern/pattern20.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/themes/switch/images/pattern/pattern20~.png" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/themes/switch/images/pattern/pattern20~.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/themes/switch/images/pattern/pattern3.png" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/themes/switch/images/pattern/pattern3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/themes/switch/images/pattern/pattern4.png" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/themes/switch/images/pattern/pattern4.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/themes/switch/images/pattern/pattern5.png" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/themes/switch/images/pattern/pattern5.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/themes/switch/images/pattern/pattern6.png" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/themes/switch/images/pattern/pattern6.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/themes/switch/images/pattern/pattern7.png" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/themes/switch/images/pattern/pattern7.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/themes/switch/images/pattern/pattern8.png" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/themes/switch/images/pattern/pattern8.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/themes/switch/images/pattern/pattern9.png" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/themes/switch/images/pattern/pattern9.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/themes/switch/images/styleTgl.png" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/themes/switch/images/styleTgl.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/themes/switch/theamswitcher.js" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/themes/switch/theamswitcher.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/themes/switch/themeswitch.css" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/themes/switch/themeswitch.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/themes/united/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/themes/united/bootstrap.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/tsconfig.app.json" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/tsconfig.app.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/tsconfig.base.json" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/tsconfig.base.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/tsconfig.spec.json" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/tsconfig.spec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-and-angular/tslint.json" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/tslint.json" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1elWyjk2KdfGZKiFcHgNufkjbgu" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+  </component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Simo\Desktop\WEB\web\Angular\back-and-spring\src\test\resources" />
+      <recent name="C:\Users\Simo\Desktop\New folder (2)\spring-boot-spring-security-jwt-authentication" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.SpringBootSecurityJwtApplication">
+    <configuration name="AuthControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="back-end" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.svc.myproject.web.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.svc.myproject.web" />
+      <option name="MAIN_CLASS_NAME" value="com.svc.myproject.web.AuthControllerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AuthControllerTest.testCorrectStatusForUserRegister" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="back-end" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.svc.myproject.web.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.svc.myproject.web" />
+      <option name="MAIN_CLASS_NAME" value="com.svc.myproject.web.AuthControllerTest" />
+      <option name="METHOD_NAME" value="testCorrectStatusForUserRegister" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringBootSecurityJwtApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="back-end" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.svc.myproject.SpringBootSecurityJwtApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.AuthControllerTest.testCorrectStatusForUserRegister" />
+        <item itemvalue="JUnit.AuthControllerTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="912237e0-145c-47d9-9a08-f9b11b35a32d" name="Default Changelist" comment="" />
+      <created>1594896915792</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1594896915792</updated>
+      <workItem from="1594896918637" duration="35224000" />
+      <workItem from="1595245600138" duration="3303000" />
+      <workItem from="1595357585907" duration="1848000" />
+      <workItem from="1595371159718" duration="12729000" />
+      <workItem from="1595430148437" duration="6911000" />
+      <workItem from="1595504924712" duration="883000" />
+      <workItem from="1595509532671" duration="20469000" />
+      <workItem from="1595713785750" duration="34239000" />
+      <workItem from="1596182281990" duration="309000" />
+      <workItem from="1596182650382" duration="27149000" />
+      <workItem from="1596410769552" duration="93695000" />
+      <workItem from="1597043776034" duration="332000" />
+      <workItem from="1597044539430" duration="53000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="859" y="411" key="#Assign_Data_Sources" timestamp="1595632702724">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="859" y="411" key="#Assign_Data_Sources/0.0.1920.1040@0.0.1920.1040" timestamp="1595632702724" />
+    <state x="845" y="383" key="#Notifications" timestamp="1596411281352">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="845" y="383" key="#Notifications/0.0.1920.1040@0.0.1920.1040" timestamp="1596411281352" />
+    <state x="552" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1596699546276">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1596699546276" />
+    <state x="0" y="408" key="#com.intellij.ide.util.MemberChooser" timestamp="1596924786392">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="0" y="408" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1596924786392" />
+    <state x="530" y="444" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1595372598261">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="530" y="444" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1595372598261" />
+    <state x="589" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1595614628817">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="589" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1595614628817" />
+    <state width="464" height="466" key="DebuggerActiveHint" timestamp="1596575600530">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="464" height="466" key="DebuggerActiveHint/0.0.1920.1040@0.0.1920.1040" timestamp="1596575600530" />
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1596473272236">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1596473272236" />
+    <state width="1877" height="123" key="GridCell.Tab.0.bottom" timestamp="1596928877495">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="123" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1596928877494" />
+    <state width="1877" height="123" key="GridCell.Tab.0.center" timestamp="1596928877494">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="123" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1596928877494" />
+    <state width="1877" height="123" key="GridCell.Tab.0.left" timestamp="1596928877494">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="123" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1596928877494" />
+    <state width="1877" height="123" key="GridCell.Tab.0.right" timestamp="1596928877494">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="123" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1596928877494" />
+    <state width="1877" height="123" key="GridCell.Tab.1.bottom" timestamp="1596928877495">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="123" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1596928877495" />
+    <state width="1877" height="123" key="GridCell.Tab.1.center" timestamp="1596928877495">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="123" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1596928877495" />
+    <state width="1877" height="123" key="GridCell.Tab.1.left" timestamp="1596928877495">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="123" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1596928877495" />
+    <state width="1877" height="123" key="GridCell.Tab.1.right" timestamp="1596928877495">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="123" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1596928877495" />
+    <state width="1877" height="251" key="GridCell.Tab.2.bottom" timestamp="1596927689073">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="251" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1596927689073" />
+    <state width="1877" height="251" key="GridCell.Tab.2.center" timestamp="1596927689073">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="251" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1596927689073" />
+    <state width="1877" height="251" key="GridCell.Tab.2.left" timestamp="1596927689073">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="251" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1596927689073" />
+    <state width="1877" height="251" key="GridCell.Tab.2.right" timestamp="1596927689073">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="251" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1596927689073" />
+    <state width="196" height="457" key="HiddenNamespacesPopup" timestamp="1596923000109">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="196" height="457" key="HiddenNamespacesPopup/0.0.1920.1040@0.0.1920.1040" timestamp="1596923000109" />
+    <state x="490" y="175" key="Maven.ArtifactSearchDialog" timestamp="1596648806800">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="490" y="175" key="Maven.ArtifactSearchDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1596648806800" />
+    <state x="440" y="94" key="SettingsEditor" timestamp="1596436460083">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="440" y="94" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1596436460083" />
+    <state width="968" height="528" key="XDebugger.FullValuePopup" timestamp="1595415278319">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="968" height="528" key="XDebugger.FullValuePopup/0.0.1920.1040@0.0.1920.1040" timestamp="1595415278319" />
+    <state x="794" y="407" width="331" height="244" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1596922840969">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="794" y="407" width="331" height="244" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.0.1920.1040@0.0.1920.1040" timestamp="1596922840969" />
+    <state x="755" y="267" key="refactoring.ChangeSignatureDialog" timestamp="1596746076902">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="755" y="267" key="refactoring.ChangeSignatureDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1596746076902" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/svc/myproject/services/impl/UserServiceImpl.java</url>
+          <line>97</line>
+          <option name="timeStamp" value="34" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/svc/myproject/services/impl/TicketServiceImpl.java</url>
+          <line>42</line>
+          <option name="timeStamp" value="43" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/svc/myproject/services/impl/TicketServiceImpl.java</url>
+          <line>57</line>
+          <option name="timeStamp" value="45" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/svc/myproject/services/impl/ProductServiceImpl.java</url>
+          <line>94</line>
+          <option name="timeStamp" value="49" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/svc/myproject/web/controllers/ProductController.java</url>
+          <line>67</line>
+          <option name="timeStamp" value="50" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
