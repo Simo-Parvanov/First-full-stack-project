@@ -6,10 +6,12 @@ import com.svc.myproject.domain.entities.User;
 import com.svc.myproject.domain.models.services.UpdateRoleServiceModel;
 import com.svc.myproject.domain.models.services.UserServiceModel;
 import com.svc.myproject.payload.request.SignupRequest;
+import com.svc.myproject.payload.response.MessageResponse;
 import com.svc.myproject.repository.UserRepository;
 import com.svc.myproject.services.RoleService;
 import com.svc.myproject.services.UserService;
 import org.modelmapper.ModelMapper;
+import org.springframework.http.ResponseEntity;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 
@@ -31,9 +33,17 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public void createUser(SignupRequest signUpRequest) {
+    public UserServiceModel createUser(SignupRequest signUpRequest) {
         roleService.seedRole();
         Set<Role> roles = new HashSet<>();
+
+        if (userRepository.existsByUsername(signUpRequest.getUsername())) {
+            throw new IllegalArgumentException("Error: Username is already taken!");
+        }
+        if (userRepository.existsByEmail(signUpRequest.getEmail())) {
+            throw new IllegalArgumentException("Error: Email is already in use!");
+        }
+
         User user = new User(signUpRequest.getUsername(),
                 signUpRequest.getEmail(),
                 passwordEncoder.encode(signUpRequest.getPassword()));
@@ -45,9 +55,8 @@ public class UserServiceImpl implements UserService {
         } else {
             roles.add(roleService.findByRoleName(ERole.ROLE_USER));
         }
-
         user.setRoles(roles);
-        userRepository.saveAndFlush(user);
+        return mapper.map(userRepository.saveAndFlush(user), UserServiceModel.class);
     }
 
     @Override
@@ -104,6 +113,11 @@ public class UserServiceImpl implements UserService {
         return userRepository.findAll().stream().map(user1 -> {
             return mapper.map(user1, UserServiceModel.class);
         }).collect(Collectors.toList());
+    }
+
+    @Override
+    public User getUserByUsername(String username) {
+        return userRepository.findByUsername(username).orElse(null);
     }
 
 }

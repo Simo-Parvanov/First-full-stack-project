@@ -49,7 +49,7 @@ public class AuthControllerTest {
 
         User user2 = new User();
         Role role2 = new Role();
-        role1.setName(TEST_USER2_ROLE);
+        role2.setName(TEST_USER2_ROLE);
         user2.setUsername((TEST_USER2_NAME));
         user2.setPassword(TEST_USER2_PASSWORD);
         user2.setRoles( Set.of(role2));
@@ -64,7 +64,7 @@ public class AuthControllerTest {
 
     @Test
     public void testCorrectStatusForUserRegister() throws Exception {
-        this.mockMvc.perform(MockMvcRequestBuilders.get("/api/auth/signup"))
+        this.mockMvc.perform(MockMvcRequestBuilders.post("/api/auth/signup"))
                 .andExpect(status().isOk());
     }
 }

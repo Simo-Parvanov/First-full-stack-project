@@ -24,62 +24,52 @@ import java.util.stream.Collectors;
 @RestController
 @RequestMapping("/api/auth")
 public class AuthController {
-	private final UserService userService;
-	private final JwtUtils jwtUtils;
-	private final AuthenticationManager authenticationManager;
+    private final UserService userService;
+    private final JwtUtils jwtUtils;
+    private final AuthenticationManager authenticationManager;
 
 
+    public AuthController(UserService userService,
+                          JwtUtils jwtUtils,
+                          AuthenticationManager authenticationManager) {
+        this.userService = userService;
+        this.jwtUtils = jwtUtils;
+        this.authenticationManager = authenticationManager;
+    }
 
-	public AuthController(UserService userService,
-						  JwtUtils jwtUtils,
-						  AuthenticationManager authenticationManager) {
-		this.userService = userService;
-		this.jwtUtils = jwtUtils;
-		this.authenticationManager = authenticationManager;
-	}
+    @PostMapping("/signin")
+    public ResponseEntity<?> authenticateUser(@Valid @RequestBody LoginRequest loginRequest,
+                                              UriComponentsBuilder builder) {
+        Authentication authentication = authenticationManager.authenticate(
+                new UsernamePasswordAuthenticationToken(loginRequest.getUsername(),
+                        loginRequest.getPassword()));
 
-	@PostMapping("/signin")
-	public ResponseEntity<?> authenticateUser(@Valid @RequestBody LoginRequest loginRequest,
-											  UriComponentsBuilder builder) {
-		Authentication authentication = authenticationManager.authenticate(
-				new UsernamePasswordAuthenticationToken(loginRequest.getUsername(),
-						loginRequest.getPassword()));
+        SecurityContextHolder.getContext().setAuthentication(authentication);
+        String jwt = jwtUtils.generateJwtToken(authentication);
 
-		SecurityContextHolder.getContext().setAuthentication(authentication);
-		String jwt = jwtUtils.generateJwtToken(authentication);
-		
-		UserDetailsImpl userDetails = (UserDetailsImpl) authentication.getPrincipal();
-		List<String> roles = userDetails.getAuthorities().stream()
-				.map(GrantedAuthority::getAuthority)
-				.collect(Collectors.toList());
+        UserDetailsImpl userDetails = (UserDetailsImpl) authentication.getPrincipal();
+        List<String> roles = userDetails.getAuthorities().stream()
+                .map(GrantedAuthority::getAuthority)
+                .collect(Collectors.toList());
 
-		return ResponseEntity.ok(new JwtResponse(jwt,
-												 userDetails.getId(),
-												 userDetails.getUsername(),
-												 userDetails.getEmail(),
-												 roles));
-//		return ResponseEntity.created(builder.path("/api/auth/signin")
-//				.buildAndExpand().toUri()).build();
-	}
+        return ResponseEntity.ok(new JwtResponse(jwt,
+                userDetails.getId(),
+                userDetails.getUsername(),
+                userDetails.getEmail(),
+                roles));
+    }
 
-	@PostMapping("/signup")
-	public ResponseEntity<?> registerUser(@Valid @RequestBody SignupRequest signUpRequest,
-										  UriComponentsBuilder builder) {
-
-		if (userService.findUserByName(signUpRequest.getUsername())) {
-			return ResponseEntity
-					.badRequest()
-					.body(new MessageResponse("Error: Username is already taken!"));
-		}
-
-		if (userService.findUserByEmail(signUpRequest.getEmail())) {
-			return ResponseEntity
-					.badRequest()
-					.body(new MessageResponse("Error: Email is already in use!"));
-		}
-		userService.createUser(signUpRequest);
-		return ResponseEntity.created(builder.path("/api/auth/signup")
-				.buildAndExpand().toUri()).build();
-//		return ResponseEntity.ok(new MessageResponse("User registered successfully!"));
-	}
+    @PostMapping("/signup")
+    public ResponseEntity<?> registerUser(@Valid @RequestBody SignupRequest signUpRequest,
+                                          UriComponentsBuilder builder) {
+        try {
+            userService.createUser(signUpRequest);
+        }catch (Exception ex){
+            return ResponseEntity
+                    .badRequest()
+                    .body(new MessageResponse(ex.getMessage()));
+        }
+        return ResponseEntity.created(builder.path("/api/auth/signup")
+                .buildAndExpand().toUri()).build();
+    }
 }

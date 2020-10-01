@@ -16,16 +16,13 @@ export class ProductDetailComponent implements OnInit {
 
   ngOnInit(): void {
     this.productID = this.actRouter.snapshot.params.id;
-    console.log(this.productID)
-    console.log(this.productData)
-    console.log(this.productData)
-    console.log(this.productData)
     this.loadProductDetails(this.productID);
   }
 
   loadProductDetails(productID){
     this.productService.getProductDetails(productID).subscribe(data => {
       this.productData = data;
+      console.log(this.productData)
     })
   }
 }
