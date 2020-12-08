@@ -1,8 +1,7 @@
 package com.svc.myproject.services.impl;
 
 import com.svc.myproject.base.TestBase;
-import com.svc.myproject.domain.entities.ERole;
-import com.svc.myproject.domain.entities.Role;
+import com.svc.myproject.domain.models.services.UpdateRoleServiceModel;
 import com.svc.myproject.domain.models.services.UserServiceModel;
 import com.svc.myproject.payload.request.SignupRequest;
 import com.svc.myproject.repository.UserRepository;
@@ -12,17 +11,15 @@ import org.junit.Assert;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.runner.RunWith;
-import org.mockito.Mockito;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.jdbc.EmbeddedDatabaseConnection;
 import org.springframework.boot.test.autoconfigure.jdbc.AutoConfigureTestDatabase;
-import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
-import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.test.context.junit4.SpringRunner;
 
-import java.util.Optional;
+import java.util.List;
+import java.util.stream.Collectors;
 
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
@@ -158,15 +155,148 @@ class UserServiceImplTest extends TestBase{
 //    void findUserByEmail() {
 //    }
 //
-//    @Test
-//    void roleUpdate() {
-//    }
-//
-//    @Test
-//    void allUsers() {
-//    }
-//
-//    @Test
-//    void deleteUser() {
-//    }
+    @Test
+    void userService_roleUpdateWithOptionUpdateRole_ReturnUserWithAddedRole() {
+        SignupRequest admin = new SignupRequest();
+        admin.setEmail("emo@abv.bg");
+        admin.setUsername("emo1123");
+        admin.setPassword("123123");
+
+        SignupRequest user = new SignupRequest();
+        user.setEmail("ivan@abv.bg");
+        user.setUsername("ivan123");
+        user.setPassword("123123");
+
+        userService.createUser(admin);
+        userService.createUser(user);
+
+
+        UpdateRoleServiceModel update = new UpdateRoleServiceModel();
+        update.setUsername(user.getUsername());
+        update.setMethod("update");
+        List<UserServiceModel> actual =  userService.roleUpdate(update);
+        List<UserServiceModel> expected = userService.allUsers().stream().map(u -> {
+            return mapper.map(u, UserServiceModel.class);
+        }).collect(Collectors.toList());
+        Assert.assertEquals(actual.get(1).getRoles().size(), expected.get(1).getRoles().size());
+        Assert.assertEquals(actual.get(1).getRoles().size(), 2);
+
+    }
+
+    @Test
+    void userService_roleUpdateWithOptionDeleteRole_ReturnUserWithOneRole() {
+        SignupRequest admin = new SignupRequest();
+        admin.setEmail("emo@abv.bg");
+        admin.setUsername("emo1123");
+        admin.setPassword("123123");
+
+        SignupRequest user = new SignupRequest();
+        user.setEmail("ivan@abv.bg");
+        user.setUsername("ivan123");
+        user.setPassword("123123");
+
+        userService.createUser(admin);
+        userService.createUser(user);
+
+
+        UpdateRoleServiceModel update = new UpdateRoleServiceModel();
+        update.setUsername(user.getUsername());
+        update.setMethod("delete");
+        List<UserServiceModel> actual =  userService.roleUpdate(update);
+        List<UserServiceModel> expected = userService.allUsers().stream().map(u -> {
+            return mapper.map(u, UserServiceModel.class);
+        }).collect(Collectors.toList());
+        Assert.assertEquals(actual.get(1).getRoles().size(), expected.get(1).getRoles().size());
+        Assert.assertEquals(actual.get(1).getRoles().size(), 1);
+
+    }
+
+    @Test
+    void userService_roleUpdateWithInvalidUsername_ReturnNull() {
+        SignupRequest admin = new SignupRequest();
+        admin.setEmail("emo@abv.bg");
+        admin.setUsername("emo1123");
+        admin.setPassword("123123");
+
+        SignupRequest user = new SignupRequest();
+        user.setEmail("ivan@abv.bg");
+        user.setUsername("ivan123");
+        user.setPassword("123123");
+
+        userService.createUser(admin);
+        userService.createUser(user);
+
+
+        UpdateRoleServiceModel update = new UpdateRoleServiceModel();
+        update.setUsername("Kiro");
+        update.setMethod("update");
+        List<UserServiceModel> actual =  userService.roleUpdate(update);
+        Assert.assertNull(actual);
+
+    }
+
+    @Test
+    void userService_allUsers_returnAllUsers() {
+        SignupRequest admin = new SignupRequest();
+        admin.setEmail("emo@abv.bg");
+        admin.setUsername("emo1123");
+        admin.setPassword("123123");
+
+        SignupRequest user = new SignupRequest();
+        user.setEmail("ivan@abv.bg");
+        user.setUsername("ivan123");
+        user.setPassword("123123");
+
+        userService.createUser(admin);
+        userService.createUser(user);
+
+        List<UserServiceModel> actual =  userService.allUsers();
+        List<UserServiceModel> expected = userRepository.findAll().stream().map(u -> {
+            return mapper.map(u, UserServiceModel.class);
+        }).collect(Collectors.toList());
+        Assert.assertEquals(actual.size(), expected.size());
+
+    }
+
+    @Test
+    void userService_deleteUserWithValidUsername_returnAllUserReducedSize() {
+        SignupRequest admin = new SignupRequest();
+        admin.setEmail("emo@abv.bg");
+        admin.setUsername("emo1123");
+        admin.setPassword("123123");
+
+        SignupRequest user = new SignupRequest();
+        user.setEmail("ivan@abv.bg");
+        user.setUsername("ivan123");
+        user.setPassword("123123");
+
+        userService.createUser(admin);
+        userService.createUser(user);
+
+        List<UserServiceModel> actual =  userService.deleteUser(user.getUsername());
+        List<UserServiceModel> expected = userRepository.findAll().stream().map(u -> {
+            return mapper.map(u, UserServiceModel.class);
+        }).collect(Collectors.toList());
+        Assert.assertEquals(actual.size(), expected.size());
+        Assert.assertEquals(actual.size(), 1);
+    }
+    @Test
+
+    void userService_deleteUserWithInvalidUsername_returnNull() {
+        SignupRequest admin = new SignupRequest();
+        admin.setEmail("emo@abv.bg");
+        admin.setUsername("emo1123");
+        admin.setPassword("123123");
+
+        SignupRequest user = new SignupRequest();
+        user.setEmail("ivan@abv.bg");
+        user.setUsername("ivan123");
+        user.setPassword("123123");
+
+        userService.createUser(admin);
+        userService.createUser(user);
+
+        List<UserServiceModel> actual =  userService.deleteUser("Kiro");
+        Assert.assertNull(actual);
+    }
 }
