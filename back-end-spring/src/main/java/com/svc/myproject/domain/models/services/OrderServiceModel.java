@@ -1,4 +1,8 @@
-package com.svc.myproject.domain.entities;
+package com.svc.myproject.domain.models.services;
+
+import com.svc.myproject.domain.entities.Product;
+import com.svc.myproject.domain.entities.StatusOrder;
+import org.hibernate.validator.constraints.Length;
 
 import javax.persistence.*;
 import javax.validation.constraints.Email;
@@ -7,23 +11,29 @@ import javax.validation.constraints.Size;
 import java.time.LocalDate;
 import java.util.Set;
 
-@Entity
-@Table(name = "orders")
-public class Order extends BaseEntity{
+public class OrderServiceModel {
+    @NotBlank
     @Column(name = "buyer_first_name", nullable = false)
     private String buyerFirstName;
+    @NotBlank
     @Column(name = "buyer_last_name", nullable = false)
     private String buyerLastName;
     @NotBlank
     @Size(max = 50)
     @Email
     private String email;
+    @NotBlank
     @Column(name = "address_buyer", nullable = false)
+    @Size(min = 5, max = 150)
     private String addressBuyer;
+    @NotBlank
     @Column(name = "supplier_office", nullable = false)
     private String supplierOffice;
+    @NotBlank
     @Column(name = "city_name", nullable = false)
+    @Size(max = 35)
     private String cityName;
+    @NotBlank
     @Column(name = "telephone", nullable = false)
     private String telephone;
     @Column(name = "date_of_the_order")
@@ -33,8 +43,8 @@ public class Order extends BaseEntity{
     @Column(name = "status_order")
     @Enumerated(EnumType.STRING)
     private StatusOrder statusOrder;
-    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
-    private Set<Product> products;
+    @OneToMany(cascade = CascadeType.ALL)
+    private Set<Product> productSet;
     @Column(name = "price_without_discount")
     private double priceWithoutDiscount;
     @Column(name = "discount_price")
@@ -44,7 +54,7 @@ public class Order extends BaseEntity{
     @Column(name = "shipping_price")
     private double shippingPrice;
 
-    public Order() {
+    public OrderServiceModel() {
     }
 
     public String getBuyerFirstName() {
@@ -127,12 +137,12 @@ public class Order extends BaseEntity{
         this.statusOrder = statusOrder;
     }
 
-    public Set<Product> getProducts() {
-        return products;
+    public Set<Product> getProductSet() {
+        return productSet;
     }
 
-    public void setProducts(Set<Product> productSet) {
-        this.products = productSet;
+    public void setProductSet(Set<Product> productSet) {
+        this.productSet = productSet;
     }
 
     public double getPriceWithoutDiscount() {
