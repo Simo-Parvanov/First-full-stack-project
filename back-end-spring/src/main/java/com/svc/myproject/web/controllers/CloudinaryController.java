@@ -18,8 +18,8 @@ import java.util.List;
 import java.util.Map;
 
 @RestController
-@RequestMapping("/cloudinary")
 @CrossOrigin(origins = "http://localhost:4200")
+@RequestMapping("/cloudinary")
 public class CloudinaryController {
     private final CloudinaryService cloudinaryService;
     private final ImageService imageService;

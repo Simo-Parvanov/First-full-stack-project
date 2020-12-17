@@ -11,8 +11,8 @@ import org.springframework.web.util.UriComponentsBuilder;
 
 import java.util.List;
 
-@CrossOrigin(origins = "http://localhost:4200")
 @RestController
+@CrossOrigin(origins = "http://localhost:4200")
 @RequestMapping("/mod")
 public class AdminController {
     private final UserService userService;
