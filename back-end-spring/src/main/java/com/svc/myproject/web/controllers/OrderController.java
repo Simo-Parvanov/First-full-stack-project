@@ -1,8 +1,10 @@
 package com.svc.myproject.web.controllers;
 
+import com.svc.myproject.domain.models.services.EmailResponseModel;
+import com.svc.myproject.domain.models.services.EmailServiceModel;
 import com.svc.myproject.domain.models.services.OrderServiceModel;
 import com.svc.myproject.services.OrderService;
-import com.svc.myproject.services.impl.EmailService;
+import com.svc.myproject.services.EmailService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.util.UriComponentsBuilder;
@@ -13,6 +15,7 @@ import org.springframework.web.util.UriComponentsBuilder;
 public class OrderController {
     private final OrderService orderService;
     private final EmailService emailService;
+
 
     public OrderController(OrderService orderService, EmailService emailService) {
         this.orderService = orderService;
@@ -28,9 +31,10 @@ public class OrderController {
                 .buildAndExpand().toUri()).build();
 
     }
-    @GetMapping("/send")
-    public void sendEmail(){
-        System.out.println();
-        emailService.sendSimpleMessage("ad","da","da");
+
+    @PostMapping("/send")
+    public EmailResponseModel sendMail(@RequestBody EmailServiceModel emailServiceModel){
+      return emailService.sendEmail(emailServiceModel);
     }
+
 }

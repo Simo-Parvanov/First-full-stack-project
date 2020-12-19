@@ -11,7 +11,11 @@
       <user-name>root</user-name>
       <schema-mapping>
         <introspection-scope>
-          <node kind="schema" qname="project_db" />
+          <node kind="schema">
+            <name qname="project_db" />
+            <name qname="shopping_list_db" />
+            <name qname="soft_uni" />
+          </node>
         </introspection-scope>
       </schema-mapping>
     </data-source>
