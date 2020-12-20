@@ -2,7 +2,6 @@ package com.svc.myproject.services.impl;
 
 import com.svc.myproject.domain.entities.Order;
 import com.svc.myproject.domain.entities.StatusOrder;
-import com.svc.myproject.domain.models.services.EmailServiceModel;
 import com.svc.myproject.domain.models.services.OrderServiceModel;
 import com.svc.myproject.repository.OrderRepository;
 import com.svc.myproject.services.EmailService;
@@ -13,6 +12,8 @@ import org.springframework.stereotype.Service;
 import java.time.DayOfWeek;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
+import java.util.Random;
+import java.util.Set;
 
 @Service
 public class OrderServiceImpl implements OrderService {
@@ -32,46 +33,70 @@ public class OrderServiceImpl implements OrderService {
     @Override
     public void createOrder(OrderServiceModel orderServiceModel) {
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/YYYY");
+        String orderNum = orderNumberGenerator();
 
         Order order = modelMapper.map(orderServiceModel, Order.class);
         order.setDateOfTheOrder(LocalDate.now());
         order.setDateOfDelivery(deliveryDay(order.getDateOfTheOrder()));
         order.setStatusOrder(StatusOrder.ACTIVE);
-        System.out.println();
-        String d = "Hello [name],\n" +
-                "\n" +
-                "Great news! Your order is on its way.\n" +
-                "\n" +
-                "This email is to notify you that your order [order number] has successfully shipped. You can click on the button below to track your shipment.\n" +
-                "\n" +
-                "[CTA]\n" +
-                "\n" +
-                "Here are the details of your order:\n" +
-                "\n" +
-                "[order details]\n" +
-                "\n" +
-                "Best regards,\n" +
-                "Team [company name]";
-        EmailServiceModel emailServiceModel = new EmailServiceModel();
-        emailServiceModel.setTo(orderServiceModel.getEmail());
-        emailServiceModel.setSubject("Order №2565488");
-        emailServiceModel.setText(d);
+        order.setOrderNumber(orderNum);
 
-        emailService.sendEmail(emailServiceModel);
+        System.out.println();
+//        String message = emailService.massage(orderServiceModel.getBuyerLastName());
+//        emailService.messageWhenOrdering();
+//        String d = "Hello [name],\n" +
+//                "\n" +
+//                "Great news! Your order is on its way.\n" +
+//                "\n" +
+//                "This email is to notify you that your order [order number] has successfully shipped. You can click on the button below to track your shipment.\n" +
+//                "\n" +
+//                "[CTA]\n" +
+//                "\n" +
+//                "Here are the details of your order:\n" +
+//                "\n" +
+//                "[order details]\n" +
+//                "\n" +
+//                "Best regards,\n" +
+//                "Team [company name]";
+//        EmailServiceModel emailServiceModel = new EmailServiceModel();
+//        emailServiceModel.setTo(orderServiceModel.getEmail());
+//        emailServiceModel.setSubject("Order №2565488");
+//        emailServiceModel.setText(d);
+
+//        emailService.sendEmail(emailServiceModel);
 
     }
+
 
     @Override
     public OrderServiceModel updateOrder(OrderServiceModel orderServiceModel) {
         return null;
     }
 
+    @Override
+    public Set<String> findAllOrderNumsByStatus(String status) {
+        return orderRepository.findAllOrderByStatus(StatusOrder.valueOf(status.toUpperCase()));
+    }
+
     private LocalDate deliveryDay(LocalDate dateOfTheOrder) {
         DayOfWeek dayOfWeek = dateOfTheOrder.plusDays(2).getDayOfWeek();
-        if (dayOfWeek == DayOfWeek.SUNDAY){
+        if (dayOfWeek == DayOfWeek.SUNDAY) {
             return dateOfTheOrder.plusDays(3);
-        }else {
+        } else {
             return dateOfTheOrder.plusDays(2);
+        }
+    }
+
+    private String orderNumberGenerator() {
+        Random rnd = new Random();
+        String num;
+        Set<String> listOrder = findAllOrderNumsByStatus("active");
+        while (true){
+            int number = rnd.nextInt(999999);
+            num = String.format("%06d", number);
+            if (!listOrder.contains(num)){
+                return num;
+            }
         }
     }
 }

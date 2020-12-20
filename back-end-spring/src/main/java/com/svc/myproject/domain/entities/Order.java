@@ -43,6 +43,8 @@ public class Order extends BaseEntity{
     private double totalPrice;
     @Column(name = "shipping_price")
     private double shippingPrice;
+    @Column(name = "order_number")
+    private String orderNumber;
 
     public Order() {
     }
@@ -131,8 +133,8 @@ public class Order extends BaseEntity{
         return products;
     }
 
-    public void setProducts(Set<Product> productSet) {
-        this.products = productSet;
+    public void setProducts(Set<Product> products) {
+        this.products = products;
     }
 
     public double getPriceWithoutDiscount() {
@@ -165,5 +167,13 @@ public class Order extends BaseEntity{
 
     public void setShippingPrice(double shippingPrice) {
         this.shippingPrice = shippingPrice;
+    }
+
+    public String getOrderNumber() {
+        return orderNumber;
+    }
+
+    public void setOrderNumber(String orderNumber) {
+        this.orderNumber = orderNumber;
     }
 }

@@ -49,8 +49,8 @@ public class UserServiceImpl implements UserService {
                 passwordEncoder.encode(signUpRequest.getPassword()));
 
         if (userRepository.count() == 0) {
-            roles.add(roleService.findByRoleName(ERole.ROLE_MODERATOR));
             roles.add(roleService.findByRoleName(ERole.ROLE_ADMIN));
+            roles.add(roleService.findByRoleName(ERole.ROLE_MODERATOR));
 
         } else {
             roles.add(roleService.findByRoleName(ERole.ROLE_USER));
