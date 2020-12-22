@@ -22,4 +22,6 @@ public interface OrderRepository extends JpaRepository<Order, String> {
     @Query("select s from Order  as s \n" +
             "where s.statusOrder = :stat1")
     List<OrderServiceModel> findAllByStatusOrder(@Param("stat1") StatusOrder stat1);
+
+    Optional<Order> findOrderByOrderNumber(String orderNumber);
 }

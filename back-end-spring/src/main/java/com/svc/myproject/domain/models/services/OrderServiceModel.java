@@ -38,11 +38,12 @@ public class OrderServiceModel {
     @NotBlank
     private StatusOrder statusOrder;
     private Set<Product> products;
-//    private double priceWithoutDiscount;
-//    private double discountPrice;
-//    private double totalPrice;
-//    private double shippingPrice;
+    private double priceWithoutDiscount;
+    private double discountPrice;
+    private double totalPrice;
+    private double shippingPrice;
     private int orderNumber;
+    private int productCount;
 
     public OrderServiceModel() {
     }
@@ -135,37 +136,37 @@ public class OrderServiceModel {
         this.products = products;
     }
 
-//    public double getPriceWithoutDiscount() {
-//        return priceWithoutDiscount;
-//    }
-//
-//    public void setPriceWithoutDiscount(double priceWithoutDiscount) {
-//        this.priceWithoutDiscount = priceWithoutDiscount;
-//    }
-//
-//    public double getDiscountPrice() {
-//        return discountPrice;
-//    }
-//
-//    public void setDiscountPrice(double discountPrice) {
-//        this.discountPrice = discountPrice;
-//    }
-//
-//    public double getTotalPrice() {
-//        return totalPrice;
-//    }
-//
-//    public void setTotalPrice(double totalPrice) {
-//        this.totalPrice = totalPrice;
-//    }
-//
-//    public double getShippingPrice() {
-//        return shippingPrice;
-//    }
-//
-//    public void setShippingPrice(double shippingPrice) {
-//        this.shippingPrice = shippingPrice;
-//    }
+    public double getPriceWithoutDiscount() {
+        return priceWithoutDiscount;
+    }
+
+    public void setPriceWithoutDiscount(double priceWithoutDiscount) {
+        this.priceWithoutDiscount = priceWithoutDiscount;
+    }
+
+    public double getDiscountPrice() {
+        return discountPrice;
+    }
+
+    public void setDiscountPrice(double discountPrice) {
+        this.discountPrice = discountPrice;
+    }
+
+    public double getTotalPrice() {
+        return totalPrice;
+    }
+
+    public void setTotalPrice(double totalPrice) {
+        this.totalPrice = totalPrice;
+    }
+
+    public double getShippingPrice() {
+        return shippingPrice;
+    }
+
+    public void setShippingPrice(double shippingPrice) {
+        this.shippingPrice = shippingPrice;
+    }
 
     public int getOrderNumber() {
         return orderNumber;
@@ -173,5 +174,13 @@ public class OrderServiceModel {
 
     public void setOrderNumber(int orderNumber) {
         this.orderNumber = orderNumber;
+    }
+
+    public int getProductCount() {
+        return productCount;
+    }
+
+    public void setProductCount(int productCount) {
+        this.productCount = productCount;
     }
 }

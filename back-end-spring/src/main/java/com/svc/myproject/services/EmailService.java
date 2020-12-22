@@ -7,5 +7,5 @@ import javax.mail.MessagingException;
 import java.io.IOException;
 
 public interface EmailService {
-    EmailResponseModel sendEmail(EmailServiceModel emailServiceModel);
+    EmailResponseModel sendEmail(String to, String subject, String text);
 }

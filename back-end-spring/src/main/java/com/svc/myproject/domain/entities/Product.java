@@ -8,7 +8,7 @@ public class Product extends BaseEntity{
     @Column(name = "name", nullable = false)
     private String name;
 
-    @Column(name = "model", nullable = false, unique = true)
+    @Column(name = "model", nullable = false)
     private String model;
 
     @Column(name = "description", columnDefinition = "TEXT")
@@ -31,6 +31,9 @@ public class Product extends BaseEntity{
 
     @ManyToOne(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
     private Category category;
+
+    @Column(name = "product_count")
+    private int productCount;
 
     public Product() {
     }
@@ -125,5 +128,13 @@ public class Product extends BaseEntity{
 
     public void setModel(String model) {
         this.model = model;
+    }
+
+    public int getProductCount() {
+        return productCount;
+    }
+
+    public void setProductCount(int productCount) {
+        this.productCount = productCount;
     }
 }

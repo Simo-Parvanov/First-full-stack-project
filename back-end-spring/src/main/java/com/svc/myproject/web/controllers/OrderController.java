@@ -1,10 +1,9 @@
 package com.svc.myproject.web.controllers;
 
-import com.svc.myproject.domain.models.services.EmailResponseModel;
-import com.svc.myproject.domain.models.services.EmailServiceModel;
 import com.svc.myproject.domain.models.services.OrderServiceModel;
 import com.svc.myproject.services.OrderService;
 import com.svc.myproject.services.EmailService;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.util.UriComponentsBuilder;
@@ -31,10 +30,19 @@ public class OrderController {
                 .buildAndExpand().toUri()).build();
 
     }
+    @GetMapping("/search/{number}")
+    public ResponseEntity<OrderServiceModel> getOrderByOrderNumber(@PathVariable String number){
+       OrderServiceModel orderServiceModel = orderService.findOrderByOrderNumber(number);
+        if (orderServiceModel == null){
+            return new  ResponseEntity(HttpStatus.NOT_FOUND);
+        }
+        return ResponseEntity.ok(orderServiceModel);
 
-    @PostMapping("/send")
-    public EmailResponseModel sendMail(@RequestBody EmailServiceModel emailServiceModel){
-      return emailService.sendEmail(emailServiceModel);
     }
+
+//    @PostMapping("/send")
+//    public EmailResponseModel sendMail(@RequestBody EmailServiceModel emailServiceModel){
+//      return emailService.sendEmail(emailServiceModel.getTo(),emailServiceModel.getSubject(),emailServiceModel.getText());
+//    }
 
 }

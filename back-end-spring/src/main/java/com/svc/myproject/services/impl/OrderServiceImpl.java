@@ -1,6 +1,7 @@
 package com.svc.myproject.services.impl;
 
 import com.svc.myproject.domain.entities.Order;
+import com.svc.myproject.domain.entities.Product;
 import com.svc.myproject.domain.entities.StatusOrder;
 import com.svc.myproject.domain.models.services.OrderServiceModel;
 import com.svc.myproject.repository.OrderRepository;
@@ -11,7 +12,7 @@ import org.springframework.stereotype.Service;
 
 import java.time.DayOfWeek;
 import java.time.LocalDate;
-import java.time.format.DateTimeFormatter;
+import java.util.Optional;
 import java.util.Random;
 import java.util.Set;
 
@@ -32,41 +33,29 @@ public class OrderServiceImpl implements OrderService {
 
     @Override
     public void createOrder(OrderServiceModel orderServiceModel) {
-        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/YYYY");
-        String orderNum = orderNumberGenerator();
 
         Order order = modelMapper.map(orderServiceModel, Order.class);
         order.setDateOfTheOrder(LocalDate.now());
         order.setDateOfDelivery(deliveryDay(order.getDateOfTheOrder()));
         order.setStatusOrder(StatusOrder.ACTIVE);
+
+        String orderNum = orderNumberGenerator();
+        double totalPrice = totalPrice(orderServiceModel.getProducts());
+        double priceWithoutDiscount = sumWithoutDiscount(orderServiceModel.getProducts());
         order.setOrderNumber(orderNum);
-
-        System.out.println();
-//        String message = emailService.massage(orderServiceModel.getBuyerLastName());
-//        emailService.messageWhenOrdering();
-//        String d = "Hello [name],\n" +
-//                "\n" +
-//                "Great news! Your order is on its way.\n" +
-//                "\n" +
-//                "This email is to notify you that your order [order number] has successfully shipped. You can click on the button below to track your shipment.\n" +
-//                "\n" +
-//                "[CTA]\n" +
-//                "\n" +
-//                "Here are the details of your order:\n" +
-//                "\n" +
-//                "[order details]\n" +
-//                "\n" +
-//                "Best regards,\n" +
-//                "Team [company name]";
-//        EmailServiceModel emailServiceModel = new EmailServiceModel();
-//        emailServiceModel.setTo(orderServiceModel.getEmail());
-//        emailServiceModel.setSubject("Order №2565488");
-//        emailServiceModel.setText(d);
-
-//        emailService.sendEmail(emailServiceModel);
-
+        order.setTotalPrice(totalPrice);
+        order.setPriceWithoutDiscount(priceWithoutDiscount);
+        order.setDiscountPrice(priceWithoutDiscount - totalPrice);
+        if (totalPrice > 100){
+            order.setShippingPrice(10);
+        }else {
+            order.setShippingPrice(0);
+        }
+        orderRepository.saveAndFlush(order);
+        emailService.sendEmail(orderServiceModel.getEmail(),
+                orderNum,
+                orderNotification(orderServiceModel));
     }
-
 
     @Override
     public OrderServiceModel updateOrder(OrderServiceModel orderServiceModel) {
@@ -76,6 +65,11 @@ public class OrderServiceImpl implements OrderService {
     @Override
     public Set<String> findAllOrderNumsByStatus(String status) {
         return orderRepository.findAllOrderByStatus(StatusOrder.valueOf(status.toUpperCase()));
+    }
+
+    @Override
+    public OrderServiceModel findOrderByOrderNumber(String orderNumber) {
+        return modelMapper.map(orderRepository.findOrderByOrderNumber(orderNumber).get(),OrderServiceModel.class);
     }
 
     private LocalDate deliveryDay(LocalDate dateOfTheOrder) {
@@ -98,5 +92,23 @@ public class OrderServiceImpl implements OrderService {
                 return num;
             }
         }
+    }
+    private double totalPrice(Set<Product> products) {
+        double sum = 0;
+        for (Product product : products) {
+            sum += product.getPrice() * product.getProductCount();
+        }
+        return sum;
+    }
+    private double sumWithoutDiscount(Set<Product> products) {
+        double sum = 0;
+        for (Product product : products) {
+            sum += product.getPriceOld() * product.getProductCount();
+        }
+        return sum;
+    }
+
+    private String orderNotification(OrderServiceModel orderServiceModel) {
+        return "TEST";
     }
 }

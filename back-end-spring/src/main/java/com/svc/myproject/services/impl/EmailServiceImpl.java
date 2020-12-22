@@ -17,13 +17,13 @@ public class EmailServiceImpl implements EmailService {
     }
 
     @Override
-    public EmailResponseModel sendEmail(EmailServiceModel emailServiceModel) {
+    public EmailResponseModel sendEmail(String to, String subject, String text) {
         EmailResponseModel responseModel = new EmailResponseModel();
         try {
             SimpleMailMessage message = new SimpleMailMessage();
-            message.setTo(emailServiceModel.getTo());
-            message.setSubject(emailServiceModel.getSubject());
-            message.setText(emailServiceModel.getText());
+            message.setTo(to);
+            message.setSubject("Order placed by PS SHOP PRO №" + subject);
+            message.setText(text);
 
             emailSender.send(message);
             responseModel.setMessage("Email send ok!");
