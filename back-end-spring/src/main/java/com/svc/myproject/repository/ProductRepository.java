@@ -24,4 +24,6 @@ public interface ProductRepository extends JpaRepository<Product, String> {
             "    join Category c on p.category.id = c.id \n" +
             "where c.firstCategory = :cat1")
     List<Product> findProductByOneParams(@Param("cat1")CategoryEnum cat1);
+
+    Product findByModel(String model);
  }

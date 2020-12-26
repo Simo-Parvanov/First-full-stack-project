@@ -54,7 +54,6 @@ public class CloudinaryController {
     @DeleteMapping("/delete/{id}")
     @PreAuthorize("hasRole('ROLE_ADMIN') or hasRole('ROLE_MODERATOR')")
     public ResponseEntity<?> upload(@PathVariable String id) throws IOException {
-        System.out.println();
         if (imageService.findByImageId(id) == null){
             return new ResponseEntity(new MessageResponse("The image does not exist!"), HttpStatus.NOT_FOUND);
         }

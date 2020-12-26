@@ -4,30 +4,41 @@ import com.svc.myproject.domain.entities.Order;
 import com.svc.myproject.domain.entities.Product;
 import com.svc.myproject.domain.entities.StatusOrder;
 import com.svc.myproject.domain.models.services.OrderServiceModel;
+import com.svc.myproject.domain.models.services.OrderUpdateModel;
+import com.svc.myproject.domain.models.services.ProductServiceModelView;
 import com.svc.myproject.repository.OrderRepository;
 import com.svc.myproject.services.EmailService;
 import com.svc.myproject.services.OrderService;
+import com.svc.myproject.services.ProductService;
 import org.modelmapper.ModelMapper;
 import org.springframework.stereotype.Service;
 
+import javax.persistence.EnumType;
+import javax.persistence.Enumerated;
+import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.Size;
 import java.time.DayOfWeek;
 import java.time.LocalDate;
+import java.util.List;
 import java.util.Optional;
 import java.util.Random;
 import java.util.Set;
+import java.util.stream.Collectors;
 
 @Service
 public class OrderServiceImpl implements OrderService {
     private final OrderRepository orderRepository;
     private final ModelMapper modelMapper;
     private final EmailService emailService;
+    private final ProductService productService;
 
 
-    public OrderServiceImpl(OrderRepository orderRepository, ModelMapper modelMapper, EmailService emailService) {
+    public OrderServiceImpl(OrderRepository orderRepository, ModelMapper modelMapper, EmailService emailService, ProductService productService) {
         this.orderRepository = orderRepository;
         this.modelMapper = modelMapper;
         this.emailService = emailService;
 
+        this.productService = productService;
     }
 
 
@@ -46,9 +57,9 @@ public class OrderServiceImpl implements OrderService {
         order.setTotalPrice(totalPrice);
         order.setPriceWithoutDiscount(priceWithoutDiscount);
         order.setDiscountPrice(priceWithoutDiscount - totalPrice);
-        if (totalPrice > 100){
+        if (totalPrice < 100) {
             order.setShippingPrice(10);
-        }else {
+        } else {
             order.setShippingPrice(0);
         }
         orderRepository.saveAndFlush(order);
@@ -69,7 +80,51 @@ public class OrderServiceImpl implements OrderService {
 
     @Override
     public OrderServiceModel findOrderByOrderNumber(String orderNumber) {
-        return modelMapper.map(orderRepository.findOrderByOrderNumber(orderNumber).get(),OrderServiceModel.class);
+        return modelMapper.map(orderRepository.findOrderByOrderNumber(orderNumber).get(), OrderServiceModel.class);
+    }
+
+    @Override
+    public List<OrderServiceModel> getAllOrders() {
+        return orderRepository.findAll().stream().map(order -> {
+            return modelMapper.map(order, OrderServiceModel.class);
+        }).collect(Collectors.toList());
+    }
+
+
+//    private double discountPrice;
+//    private double totalPrice;
+//    private double shippingPrice;
+//    private int orderNumber;
+//    private String note;
+
+    @Override
+    public OrderServiceModel update(String id, OrderUpdateModel updateModel) {
+        Optional<Order> order = orderRepository.findById(id);
+        order.get().setAddressBuyer(updateModel.getAddressBuyer());
+        order.get().setSupplierOffice(updateModel.getSupplierOffice());
+        order.get().setCityName(updateModel.getCityName());
+        order.get().setTelephone(updateModel.getTelephone());
+        order.get().setStatusOrder(updateModel.getStatusOrder());
+        order.get().setProducts(updateModel.getProducts());
+        double totalPrice = totalPrice(updateModel.getProducts());
+        double priceWithoutDiscount = sumWithoutDiscount(updateModel.getProducts());
+        order.get().setPriceWithoutDiscount(priceWithoutDiscount);
+        order.get().setTotalPrice(totalPrice);
+        order.get().setDiscountPrice(priceWithoutDiscount - totalPrice);
+        if (totalPrice < 100) {
+            order.get().setShippingPrice(10);
+        } else {
+            order.get().setShippingPrice(0);
+        }
+        order.get().setNote(updateModel.getNote());
+        orderRepository.saveAndFlush(order.get());
+
+        return modelMapper.map(order, OrderServiceModel.class);
+    }
+
+    @Override
+    public Order findOrderById(String id) {
+        return orderRepository.findById(id).orElse(null);
     }
 
     private LocalDate deliveryDay(LocalDate dateOfTheOrder) {
@@ -85,14 +140,15 @@ public class OrderServiceImpl implements OrderService {
         Random rnd = new Random();
         String num;
         Set<String> listOrder = findAllOrderNumsByStatus("active");
-        while (true){
+        while (true) {
             int number = rnd.nextInt(999999);
             num = String.format("%06d", number);
-            if (!listOrder.contains(num)){
+            if (!listOrder.contains(num)) {
                 return num;
             }
         }
     }
+
     private double totalPrice(Set<Product> products) {
         double sum = 0;
         for (Product product : products) {
@@ -100,10 +156,12 @@ public class OrderServiceImpl implements OrderService {
         }
         return sum;
     }
+
     private double sumWithoutDiscount(Set<Product> products) {
         double sum = 0;
         for (Product product : products) {
-            sum += product.getPriceOld() * product.getProductCount();
+            ProductServiceModelView productModel = productService.getProductByModel(product.getModel());
+            sum += productModel.getPriceOld() * product.getProductCount();
         }
         return sum;
     }

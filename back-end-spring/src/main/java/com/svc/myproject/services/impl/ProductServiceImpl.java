@@ -103,6 +103,11 @@ public class ProductServiceImpl implements ProductService {
         return addedImageAndMapper(product);
     }
 
+    @Override
+    public ProductServiceModelView getProductByModel(String model) {
+        return mapper.map(productRepository.findByModel(model), ProductServiceModelView.class);
+    }
+
     private List<ProductServiceModelView> addedImageAndMapper(List<Product> products) {
         List<ProductServiceModelView> result = new ArrayList<>();
         for (Product product : products) {

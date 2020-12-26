@@ -23,4 +23,6 @@ public interface ProductService {
     void deleteProduct(String id);
 
     List<ProductServiceModelView> findByTwoCategories(CategoryServiceModel categoryServiceModel);
+
+    ProductServiceModelView getProductByModel(String model);
 }

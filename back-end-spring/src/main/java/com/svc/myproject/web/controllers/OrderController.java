@@ -1,12 +1,16 @@
 package com.svc.myproject.web.controllers;
 
 import com.svc.myproject.domain.models.services.OrderServiceModel;
-import com.svc.myproject.services.OrderService;
+import com.svc.myproject.domain.models.services.OrderUpdateModel;
 import com.svc.myproject.services.EmailService;
+import com.svc.myproject.services.OrderService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.util.UriComponentsBuilder;
+
+import java.util.List;
 
 @RestController
 @CrossOrigin(origins = "http://localhost:4200")
@@ -31,6 +35,7 @@ public class OrderController {
 
     }
     @GetMapping("/search/{number}")
+    @PreAuthorize("hasRole('ROLE_ADMIN') or hasRole('ROLE_MODERATOR')")
     public ResponseEntity<OrderServiceModel> getOrderByOrderNumber(@PathVariable String number){
        OrderServiceModel orderServiceModel = orderService.findOrderByOrderNumber(number);
         if (orderServiceModel == null){
@@ -40,9 +45,24 @@ public class OrderController {
 
     }
 
-//    @PostMapping("/send")
-//    public EmailResponseModel sendMail(@RequestBody EmailServiceModel emailServiceModel){
-//      return emailService.sendEmail(emailServiceModel.getTo(),emailServiceModel.getSubject(),emailServiceModel.getText());
-//    }
+    @GetMapping("/all")
+    @PreAuthorize("hasRole('ROLE_ADMIN') or hasRole('ROLE_MODERATOR')")
+    public ResponseEntity<List<OrderServiceModel>> getAllOrders(){
+        List<OrderServiceModel> orderServiceModel = orderService.getAllOrders();
+        return ResponseEntity.ok(orderServiceModel);
+
+    }
+
+    @PutMapping("/update/{id}")
+    @PreAuthorize("hasRole('ROLE_ADMIN') or hasRole('ROLE_MODERATOR')")
+    public ResponseEntity<OrderServiceModel> updateOrderByID(@PathVariable String id,
+                                                             @RequestBody OrderUpdateModel updateModel){
+        if(orderService.findOrderById(id) == null){
+            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+        }
+        OrderServiceModel orderServiceModel = orderService.update(id, updateModel);
+       return new ResponseEntity<>(orderServiceModel, HttpStatus.OK);
+    }
+
 
 }

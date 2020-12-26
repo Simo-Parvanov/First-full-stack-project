@@ -1,78 +1,38 @@
-package com.svc.myproject.domain.entities;
+package com.svc.myproject.domain.models.services;
 
-import javax.persistence.*;
-import javax.validation.constraints.Email;
+import com.svc.myproject.domain.entities.Product;
+import com.svc.myproject.domain.entities.StatusOrder;
+
+import javax.persistence.EnumType;
+import javax.persistence.Enumerated;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Size;
-import java.time.LocalDate;
 import java.util.Set;
 
-@Entity
-@Table(name = "orders")
-public class Order extends BaseEntity{
-    @Column(name = "buyer_first_name", nullable = false)
-    private String buyerFirstName;
-    @Column(name = "buyer_last_name", nullable = false)
-    private String buyerLastName;
+public class OrderUpdateModel {
     @NotBlank
-    @Size(max = 50)
-    @Email
-    private String email;
-    @Column(name = "address_buyer", nullable = false)
+    @Size(min = 5, max = 150)
     private String addressBuyer;
-    @Column(name = "supplier_office", nullable = false)
+    @NotBlank
     private String supplierOffice;
-    @Column(name = "city_name", nullable = false)
+    @NotBlank
+    @Size(max = 35)
+    @NotBlank
     private String cityName;
-    @Column(name = "telephone", nullable = false)
+    @NotBlank
     private String telephone;
-    @Column(name = "date_of_the_order")
-    private LocalDate dateOfTheOrder;
-    @Column(name = "date_of_delivery")
-    private LocalDate dateOfDelivery;
-    @Column(name = "status_order")
     @Enumerated(EnumType.STRING)
+    @NotBlank
     private StatusOrder statusOrder;
-    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     private Set<Product> products;
-    @Column(name = "price_without_discount")
     private double priceWithoutDiscount;
-    @Column(name = "discount_price")
     private double discountPrice;
-    @Column(name = "total_price")
     private double totalPrice;
-    @Column(name = "shipping_price")
     private double shippingPrice;
-    @Column(name = "order_number")
-    private String orderNumber;
-    @Column(name = "note", columnDefinition = "TEXT")
+    private int orderNumber;
     private String note;
 
-    public Order() {
-    }
-
-    public String getBuyerFirstName() {
-        return buyerFirstName;
-    }
-
-    public void setBuyerFirstName(String buyerFirstName) {
-        this.buyerFirstName = buyerFirstName;
-    }
-
-    public String getBuyerLastName() {
-        return buyerLastName;
-    }
-
-    public void setBuyerLastName(String buyerLastName) {
-        this.buyerLastName = buyerLastName;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
+    public OrderUpdateModel() {
     }
 
     public String getAddressBuyer() {
@@ -105,22 +65,6 @@ public class Order extends BaseEntity{
 
     public void setTelephone(String telephone) {
         this.telephone = telephone;
-    }
-
-    public LocalDate getDateOfTheOrder() {
-        return dateOfTheOrder;
-    }
-
-    public void setDateOfTheOrder(LocalDate dateOfTheOrder) {
-        this.dateOfTheOrder = dateOfTheOrder;
-    }
-
-    public LocalDate getDateOfDelivery() {
-        return dateOfDelivery;
-    }
-
-    public void setDateOfDelivery(LocalDate dateOfDelivery) {
-        this.dateOfDelivery = dateOfDelivery;
     }
 
     public StatusOrder getStatusOrder() {
@@ -171,11 +115,11 @@ public class Order extends BaseEntity{
         this.shippingPrice = shippingPrice;
     }
 
-    public String getOrderNumber() {
+    public int getOrderNumber() {
         return orderNumber;
     }
 
-    public void setOrderNumber(String orderNumber) {
+    public void setOrderNumber(int orderNumber) {
         this.orderNumber = orderNumber;
     }
 
