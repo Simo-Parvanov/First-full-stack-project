@@ -14,14 +14,10 @@ import java.util.Map;
 
 @Service
 public class CloudinaryServiceImpl implements CloudinaryService {
-    Cloudinary cloudinary;
+    private final Cloudinary cloudinary;
 
-    public CloudinaryServiceImpl() {
-        Map<String, String> valuesMap = new HashMap<>();
-        valuesMap.put("cloud_name", "dr7iltbog");
-        valuesMap.put("api_key", "261973236744725");
-        valuesMap.put("api_secret", "lONTj0B6NfpJqR7UrogcxD22nnU");
-        cloudinary = new Cloudinary(valuesMap);
+    public CloudinaryServiceImpl(Cloudinary cloudinary) {
+        this.cloudinary = cloudinary;
     }
 
     @Override

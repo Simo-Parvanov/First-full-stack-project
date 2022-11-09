@@ -5,17 +5,40 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="912237e0-145c-47d9-9a08-f9b11b35a32d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/svc/myproject/domain/models/services/OrderUpdateModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/5861a286-29bb-4e1a-9f9e-a6aa8cb2057f.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/5861a286-29bb-4e1a-9f9e-a6aa8cb2057f/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/5861a286-29bb-4e1a-9f9e-a6aa8cb2057f/storage_v2/_src_/schema/mysql.osA4Bg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/5861a286-29bb-4e1a-9f9e-a6aa8cb2057f/storage_v2/_src_/schema/performance_schema.kIw0nw.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/5861a286-29bb-4e1a-9f9e-a6aa8cb2057f/storage_v2/_src_/schema/sys.zb4BAA.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/6eacc732-4e9b-43e9-ad4b-d10b28d1a348/storage_v2/_src_/schema/car_dealer_db.uTHyyw.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/6eacc732-4e9b-43e9-ad4b-d10b28d1a348/storage_v2/_src_/schema/car_shop_db._DyDMg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/6eacc732-4e9b-43e9-ad4b-d10b28d1a348/storage_v2/_src_/schema/db.fgwAAA.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/6eacc732-4e9b-43e9-ad4b-d10b28d1a348/storage_v2/_src_/schema/heroes_db.9RlZiQ.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/6eacc732-4e9b-43e9-ad4b-d10b28d1a348/storage_v2/_src_/schema/izpit2.qI4Yug.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/6eacc732-4e9b-43e9-ad4b-d10b28d1a348/storage_v2/_src_/schema/mysql.osA4Bg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/6eacc732-4e9b-43e9-ad4b-d10b28d1a348/storage_v2/_src_/schema/performance_schema.kIw0nw.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/6eacc732-4e9b-43e9-ad4b-d10b28d1a348/storage_v2/_src_/schema/product_shop_db.Fz-qDA.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/6eacc732-4e9b-43e9-ad4b-d10b28d1a348/storage_v2/_src_/schema/restaurant.PUtalg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/6eacc732-4e9b-43e9-ad4b-d10b28d1a348/storage_v2/_src_/schema/ruk_database.UuFhBA.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/6eacc732-4e9b-43e9-ad4b-d10b28d1a348/storage_v2/_src_/schema/shop_for_dress_db.5SzGbA.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/6eacc732-4e9b-43e9-ad4b-d10b28d1a348/storage_v2/_src_/schema/shopping_list_db.6EMsxA.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/6eacc732-4e9b-43e9-ad4b-d10b28d1a348/storage_v2/_src_/schema/sys.zb4BAA.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/6eacc732-4e9b-43e9-ad4b-d10b28d1a348/storage_v2/_src_/schema/test7.5U2SBg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/6eacc732-4e9b-43e9-ad4b-d10b28d1a348/storage_v2/_src_/schema/test8.5k2SBg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/6eacc732-4e9b-43e9-ad4b-d10b28d1a348/storage_v2/_src_/schema/test_exam_db.8QluZA.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/6eacc732-4e9b-43e9-ad4b-d10b28d1a348.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/6eacc732-4e9b-43e9-ad4b-d10b28d1a348.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/6eacc732-4e9b-43e9-ad4b-d10b28d1a348/storage_v2/_src_/schema/soft_uni.W8OYTg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/6eacc732-4e9b-43e9-ad4b-d10b28d1a348/storage_v2/_src_/schema/soft_uni.W8OYTg.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/svc/myproject/domain/entities/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/svc/myproject/domain/entities/Order.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/svc/myproject/repository/ProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/svc/myproject/repository/ProductRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/svc/myproject/services/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/svc/myproject/services/OrderService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/svc/myproject/services/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/svc/myproject/services/ProductService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/svc/myproject/services/impl/OrderServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/svc/myproject/services/impl/OrderServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/svc/myproject/services/impl/ProductServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/svc/myproject/services/impl/ProductServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/svc/myproject/web/controllers/CloudinaryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/svc/myproject/web/controllers/CloudinaryController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/svc/myproject/web/controllers/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/svc/myproject/web/controllers/OrderController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back-end.iml" beforeDir="false" afterPath="$PROJECT_DIR$/back-end.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/svc/myproject/config/AppConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/svc/myproject/config/AppConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/svc/myproject/services/impl/CloudinaryServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/svc/myproject/services/impl/CloudinaryServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-end-angular/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front-end-angular/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../front-end-angular/package-lock.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,10 +58,14 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="mavenHome" value="C:\Users\Simo\.m2\wrapper\dists\apache-maven-3.6.0-bin\2dakv70gp803gtm5ve1ufmvttn\apache-maven-3.6.0" />
+        <option name="mavenHome" value="Use Maven wrapper" />
+        <option name="useMavenConfig" value="true" />
       </MavenGeneralSettings>
     </option>
   </component>
@@ -49,26 +76,25 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
-    <property name="DatabaseDriversLRU" value="h2&#10;mysql" />
-    <property name="RequestMappingsPanelOrder0" value="0" />
-    <property name="RequestMappingsPanelOrder1" value="1" />
-    <property name="RequestMappingsPanelWidth0" value="75" />
-    <property name="RequestMappingsPanelWidth1" value="75" />
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
-    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Problems" />
-    <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
-  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/RestProject/First-full-stack-project/back-end-spring",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Problems",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices",
+    "spring.configuration.checksum": "a115a25065b29adfe4c0b73391cd5b3a"
+  }
+}]]></component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
@@ -88,6 +114,19 @@
     </key>
   </component>
   <component name="RunManager" selected="Spring Boot.SpringBootSecurityJwtApplication">
+    <configuration name="SpringBootSecurityJwtApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.svc.myproject.SpringBootSecurityJwtApplication" />
+      <module name="back-end" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.svc.myproject.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="UserServiceImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="back-end" />
       <extension name="coverage">
@@ -151,36 +190,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserServiceImplTest.userService_roleUpdateWithOptionUpdateRole_ReturnUserWithAddedRole" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="back-end" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.svc.myproject.services.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.svc.myproject.services.impl" />
-      <option name="MAIN_CLASS_NAME" value="com.svc.myproject.services.impl.UserServiceImplTest" />
-      <option name="METHOD_NAME" value="userService_roleUpdateWithOptionUpdateRole_ReturnUserWithAddedRole" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="SpringBootSecurityJwtApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <option name="ACTIVE_PROFILES" />
       <module name="back-end" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.svc.myproject.SpringBootSecurityJwtApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.SpringBootSecurityJwtApplication" />
+      <item itemvalue="JUnit.UserServiceImplTest" />
+      <item itemvalue="JUnit.UserServiceImplTest.userService_allUsers_returnAllUsers" />
+      <item itemvalue="JUnit.UserServiceImplTest.userService_deleteUserWithValidUsername_returnAllUserReducedSize" />
+      <item itemvalue="JUnit.UserServiceImplTest.userService_roleDeleteWithOptionUpdateRole_ReturnUserWithOneRole" />
+      <item itemvalue="Spring Boot.SpringBootSecurityJwtApplication" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.SpringBootSecurityJwtApplication" />
         <item itemvalue="JUnit.UserServiceImplTest" />
         <item itemvalue="JUnit.UserServiceImplTest.userService_deleteUserWithValidUsername_returnAllUserReducedSize" />
         <item itemvalue="JUnit.UserServiceImplTest.userService_allUsers_returnAllUsers" />
         <item itemvalue="JUnit.UserServiceImplTest.userService_roleDeleteWithOptionUpdateRole_ReturnUserWithOneRole" />
-        <item itemvalue="JUnit.UserServiceImplTest.userService_roleUpdateWithOptionUpdateRole_ReturnUserWithAddedRole" />
       </list>
     </recent_temporary>
   </component>
@@ -233,129 +265,31 @@
       <workItem from="1608068123576" duration="2289000" />
       <workItem from="1608072886989" duration="66170000" />
       <workItem from="1608996540321" duration="2035000" />
+      <workItem from="1664115566877" duration="911000" />
+      <workItem from="1664116502119" duration="1405000" />
+      <workItem from="1664117920165" duration="480000" />
+      <workItem from="1664118412853" duration="12194000" />
+      <workItem from="1664272293691" duration="1259000" />
+      <workItem from="1668027430957" duration="1733000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="668" y="304" key="#Assign_Data_Sources" timestamp="1608477221888">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="668" y="304" key="#Assign_Data_Sources/0.0.1536.824@0.0.1536.824" timestamp="1608477221888" />
-    <state x="395" y="91" key="#Inspections" timestamp="1608474641485">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="395" y="91" key="#Inspections/0.0.1536.824@0.0.1536.824" timestamp="1608474641485" />
-    <state x="677" y="142" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1608068568678">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="677" y="142" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1608068568678" />
-    <state x="574" y="128" key="#com.intellij.ide.util.MemberChooser" timestamp="1608990396733">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="574" y="128" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1608990396733" />
-    <state x="449" y="148" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1605615593036">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="449" y="148" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1536.824@0.0.1536.824" timestamp="1605615593036" />
-    <state x="551" y="281" width="433" height="267" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1608329076453">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="551" y="281" width="433" height="267" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1536.824@0.0.1536.824" timestamp="1608329076453" />
-    <state x="416" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1608476923835">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="416" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.824@0.0.1536.824" timestamp="1608476923835" />
-    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1608340924716">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1608340924716" />
-    <state x="499" y="159" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog" timestamp="1608996899803">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="499" y="159" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog/0.0.1536.824@0.0.1536.824" timestamp="1608996899803" />
-    <state width="476" height="466" key="DebuggerActiveHint" timestamp="1608478193014">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="476" height="466" key="DebuggerActiveHint/0.0.1536.824@0.0.1536.824" timestamp="1608478193014" />
-    <state x="592" y="218" key="FileChooserDialogImpl" timestamp="1601550798865">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="592" y="218" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1601550798865" />
-    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1600948493861" />
-    <state width="1493" height="161" key="GridCell.Tab.0.bottom" timestamp="1608989945354">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="161" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1608989945354" />
-    <state width="1493" height="161" key="GridCell.Tab.0.center" timestamp="1608989945354">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="161" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1608989945354" />
-    <state width="1493" height="161" key="GridCell.Tab.0.left" timestamp="1608989945354">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="161" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1608989945354" />
-    <state width="1493" height="161" key="GridCell.Tab.0.right" timestamp="1608989945354">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="161" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1608989945354" />
-    <state width="1493" height="161" key="GridCell.Tab.1.bottom" timestamp="1608990060211">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="161" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1608990060211" />
-    <state width="1493" height="161" key="GridCell.Tab.1.center" timestamp="1608990060211">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="161" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1608990060211" />
-    <state width="1493" height="161" key="GridCell.Tab.1.left" timestamp="1608990060211">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="161" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1608990060211" />
-    <state width="1493" height="161" key="GridCell.Tab.1.right" timestamp="1608990060211">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="161" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1608990060211" />
-    <state width="1493" height="161" key="GridCell.Tab.2.bottom" timestamp="1608989945317">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="161" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1608989945317" />
-    <state width="1493" height="161" key="GridCell.Tab.2.center" timestamp="1608989945317">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="161" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1608989945317" />
-    <state width="1493" height="161" key="GridCell.Tab.2.left" timestamp="1608989945317">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="161" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1608989945317" />
-    <state width="1493" height="161" key="GridCell.Tab.2.right" timestamp="1608989945317">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="161" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1608989945317" />
-    <state width="248" height="363" key="HiddenNamespacesPopup" timestamp="1608998427452">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="248" height="363" key="HiddenNamespacesPopup/0.0.1536.824@0.0.1536.824" timestamp="1608998427452" />
-    <state x="352" y="0" key="SettingsEditor" timestamp="1608069992834">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="352" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1608069992834" />
-    <state x="629" y="295" width="312" height="245" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1608998638877">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="629" y="295" width="312" height="245" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.0.1536.824@0.0.1536.824" timestamp="1608998638877" />
-    <state x="360" y="33" key="new project wizard" timestamp="1607556395407">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="360" y="33" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1607556395407" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1605829830204">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1605829830204" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -427,6 +361,10 @@
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/spring_rest$UserServiceImplTest_userService_createUserWithCorrectValues_ReturnCorrectResult.ic" NAME="UserServiceImplTest.userService_createUserWithCorrectValues_ReturnCorrectResult Coverage Results" MODIFIED="1599738907497" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
